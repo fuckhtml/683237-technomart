@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Mashustik](https://up.htmlacademy.ru/htmlcss/21/user/683237).
-* Наставник: [Александр Григорьев].
+* Наставник: [Александр Григорьев](https://htmlacademy.ru/profile/xxx).
 
 ---
 
