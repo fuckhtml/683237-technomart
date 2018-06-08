@@ -16,9 +16,10 @@
         </a>
       </div>
       <div class="order-block">
-        <div class="search-form">
-          <span>Поиск:</span>
-        </div>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search-form-fild">Поиск</label>
+          <input type="search" name="search-form-fild" id="search-form-fild" placeholder="Поиск:" autocomplete="on">
+        </form>
         <a href="#" class="bookmarks">Закладки</a>
         <a href="#" class="basket">Корзина</a>
         <a href="#" class="btn">Оформить заказ</a>
@@ -85,7 +86,64 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр</h2>
-        <!-- Здесь будет форма -->
+        <form class="filters" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="price">
+            <legend>Цена:</legend>
+            <div class="scale">
+              <label class="visually-hidden" for="price-range">Шкала цены</label>
+              <input type="range" name="price-range" id="price-range" multiple>
+            </div>
+
+            <div class="numerical-values">
+              <label class="visually-hidden" for="min-price">Минимальное значение</label>
+              <input type="text" name="min-price" id="min-price" value="0">
+              <span>-</span>
+              <label class="visually-hidden" for="max-price">Максимальное значение</label>
+              <input type="text" name="max-price" id="max-price" value="30000">
+            </div>
+          </fieldset>
+
+          <fieldset class="producers">
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <label for="producers-bosch">Bosch</label>
+                <input type="checkbox" name="bosch" id="producers-bosch" checked>
+              </li>
+              <li>
+                <label for="producers-interskol">Интерскол</label>
+                <input type="checkbox" name="interskol" id="producers-interskol">
+              </li>
+              <li>
+                <label for="producers-makita">Makita</label>
+                <input type="checkbox" name="makita" id="producers-makita" checked>
+              </li>
+              <li>
+                <label for="producers-dewalt">Dewalt</label>
+                <input type="checkbox" name="dewalt" id="producers-dewalt">
+              </li>
+              <li>
+                <label for="producers-hitachi">Hitachi</label>
+                <input type="checkbox" name="hitachi" id="producers-hitachi">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="power">
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <label for="power-battery">Аккумуляторные</label>
+                <input type="radio" name="power-type" id="power-battery" value="battery" checked>
+              </li>
+              <li>
+                <label for="power-alternating-current-system">Сетевые</label>
+                <input type="radio" name="power-type" id="power-alternating-current-system" value="alternating-current-system">
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="catalog">
