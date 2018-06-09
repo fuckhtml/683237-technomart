@@ -17,8 +17,8 @@
       </div>
       <div class="order-block">
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-          <label class="visually-hidden" for="search-form-fild">Поиск</label>
-          <input type="search" name="search-form-fild" id="search-form-fild" placeholder="Поиск:" autocomplete="on">
+          <label class="visually-hidden" for="search-request">Поиск</label>
+          <input type="search" name="search-request" id="search-request" placeholder="Поиск:" autocomplete="on">
         </form>
         <a href="#" class="bookmarks">Закладки</a>
         <a href="#" class="basket">Корзина</a>
@@ -291,7 +291,9 @@
           <p>
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
-          <img src="img/map.jpg" alt="Карта проезда к магазину Техномарт Большая Конюшенная ул., 19" width="300" height="158">
+          <a class="btn">
+            <img src="img/map.jpg" alt="Карта проезда к магазину Техномарт Большая Конюшенная ул., 19" width="300" height="158">
+          </a>
           <a class="btn" href="#">Заблудились? Напишите нам!</a>
         </div>
       </section>
@@ -385,7 +387,7 @@
 
         <div>
           <label for="textarea">Текст письма:</label>
-          <textarea name="textarea" id="textarea" rows="8" cols="80" placeholder="В свободной форме" autocomplete="on" required></textarea>
+          <textarea name="message" id="textarea" rows="8" cols="80" placeholder="В свободной форме" autocomplete="on" required></textarea>
         </div>
 
         <button type="submit">Отправить</button>
