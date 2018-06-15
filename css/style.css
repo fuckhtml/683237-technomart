@@ -646,6 +646,16 @@ main h2 {
   border-radius: 1px;
 }
 
+.write-us-form input:hover,
+.write-us-form textarea:hover {
+  border: solid 2px #b5b5b5;
+}
+
+.write-us-form input:active,
+.write-us-form textarea:active {
+  border: solid 2px #ee3643;
+}
+
 .write-us-form label {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
