@@ -7,11 +7,13 @@ font-family: 'PT Sans', sans-serif;
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
+
+  font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  font-weight: normal;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
+
   background-color: #ffffff;
 }
 
@@ -20,17 +22,20 @@ a {
 }
 
 .main-header {
-  background-color: #f2f6f8;
   font-family: "Cuprum", "Arial", sans-serif;
+
+  background-color: #f2f6f8;
 }
 
 .main-header-top {
-  background-color: #293449;
   color: #ffffff;
+
+  background-color: #293449;
 }
 
 .main-header-top a {
   color: #ffffff;
+
   background-color: #293449;
 }
 
@@ -47,10 +52,10 @@ a {
 }
 
 .logo b {
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 .order-block input[type="search"] {
@@ -66,8 +71,9 @@ a {
 
 .bookmarks:active,
 .basket:active {
-  background-color: #161d29;
   color: rgba(255, 255, 255, 0.5);
+
+  background-color: #161d29;
 }
 
 .main-header-top .order-complete {
@@ -79,8 +85,9 @@ a {
 }
 
 .main-header-top .order-complete:active {
-  background-color: #518534;
   color: rgba(255, 255, 255, 0.5);
+
+  background-color: #518534;
 }
 
 .order-block {
@@ -96,18 +103,20 @@ a {
 .header-contacts .store-description,
 .header-contacts b {
   color: #ee3643;
-  background-color: #f3f7f8
+
+  background-color: #f3f7f8;
 }
 
 .header-contacts .store-description {
   font-size: 16px;
-  font-style: italic;
   line-height: 23px;
+  font-style: italic;
 }
 
 .header-contacts b {
   font-size: 21px;
   line-height: 21px;
+
   border: solid 3px #ffffff;
 }
 
@@ -115,6 +124,7 @@ a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
+
   background-color: #ffffff;
 }
 
@@ -132,16 +142,18 @@ a {
 }
 
 .user-block ul {
-  list-style: none;
   padding: 0;
+
+  list-style: none;
 }
 
 .user-block-menu a {
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
-  background-color: #f2f6f8;
   text-decoration: underline;
+
+  background-color: #f2f6f8;
 }
 
 .user-block-menu a:active {
@@ -154,12 +166,14 @@ a {
 }
 
 .main-navigation ul {
-  list-style: none;
   padding: 0;
+
+  list-style: none;
 }
 
 .main-navigation a {
   color: #ffffff;
+
   background-color: #32425c;
 }
 
@@ -169,6 +183,7 @@ a {
 
 .main-navigation a:active {
   color: rgba(255, 255, 255, 0.5);
+
   background-color: #1d2739;
 }
 
@@ -177,23 +192,25 @@ a {
 }
 
 .promo-item h3 {
-  color: #ffffff;
-  background-color: #transparent;
+  font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
+  color: #ffffff;
+
+  background-color: #transparent;
 }
 
 .button {
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  text-transform: uppercase;
-  font-weight: normal;
-  color: #ffffff;
-  background-color: #ee3643;
-  text-align: center;
+  font-family: "Cuprum", "Arial", sans-serif;
   vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
   border: none;
 }
 
@@ -238,11 +255,11 @@ a {
 }
 
 main h2 {
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
+  font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 .title-wrapper {
@@ -251,28 +268,31 @@ main h2 {
 
 .title-wrapper h2 {
   color: #32425c;
+
   background-color: #f9f5f0;
 }
 
 .popular-goods ul {
-  list-style: none;
   padding: 0;
+
+  list-style: none;
 }
 
 .catalog-item {
-  border: solid 1px #eaeaea;
-  text-align: center;
   vertical-align: middle;
+  text-align: center;
+
+  border: solid 1px #eaeaea;
 }
 
 .catalog-item:hover {
-  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .catalog-item h3 {
+  font-weight: bold;
   font-size: 18px;
   line-height: 20px;
-  font-weight: bold;
 }
 
 .catalog-item img {
@@ -285,19 +305,21 @@ main h2 {
 }
 
 .catalog-item p {
+  font-weight: bold;
   font-size: 17px;
   line-height: 18px;
-  font-weight: bold;
 }
 
 .catalog-item .old-price {
   color: #a9a9a9;
-  background-color: #ffffff;
   text-decoration: line-through;
+
+  background-color: #ffffff;
 }
 
 .catalog-item .new-price {
   color: #ffffff;
+
   background-color: #ee3643;
 }
 
@@ -305,18 +327,21 @@ main h2 {
 .to-bookmarks-button {
   font-size: 14px;
   line-height: 20px;
-  border-radius: 2px;
+
   border: solid 3px #63a63e;
+  border-radius: 2px;
 }
 
 .buy-button {
   color: #ffffff;
+
   background-color: #63a63e;
   /* box-shadow: inset 0px -3px 0 0 #367315; */
 }
 
 .to-bookmarks-button {
   color: #32425c;
+
   background-color: #ffffff;
 }
 
@@ -336,26 +361,29 @@ main h2 {
 
 .to-bookmarks-button:active {
   color: rgba(50, 66, 92, 0.3);
+
   border: solid 3px rgba(50, 66, 92, 0.3);
 }
 
 .popular-producers ul {
   padding: 0;
+
   list-style: none;
 }
 
 .popular-producers-list li {
-  border: solid 1px #eaeaea;
-  text-align: center;
   vertical-align: middle;
+  text-align: center;
+
+  border: solid 1px #eaeaea;
 }
 
 .popular-producers-list a:hover {
-  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .popular-producers-list a:active {
-  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+  box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
 .popular-producers-list img:active {
@@ -368,55 +396,60 @@ main h2 {
 
 /* слайдер */
 .services-slider b {
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #32425c;
-  background-color: #f4f8fa;
-  font-weight: 400;
   text-transform: uppercase;
+
+  background-color: #f4f8fa;
 }
 
-.services-slider ul  {
+.services-slider ul {
   padding: 0;
+
   list-style: none;
 }
 
 .services-list a {
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: bold;
   font-size: 21px;
   line-height: 30px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
+
   background-color: #32425c;
-  font-weight: bold;
-  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  box-shadow: 0 1px 0 0 #293449, inset 0 1px 0 0 #405069;
 }
 
 .services-list a:hover {
   background-color: #293449;
-  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  box-shadow: 0 1px 0 0 #293449, inset 0 1px 0 0 #405069;
 }
 
 
 .services-list .active {
   color: #32425c;
+
   background-color: #ffffff;
-  box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+  box-shadow: 0 1px 0 0 #ffffff, inset 0 1px 0 0 #ffffff;
 }
 
 .services-list .active:hover {
   color: #ffffff;
+
   background-color: #293449;
-  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  box-shadow: 0 1px 0 0 #293449, inset 0 1px 0 0 #405069;
 }
 
 /* конец слайдера */
 
 .about-company-left ul {
   list-style: none;
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .about-company .modal-map {
@@ -426,8 +459,9 @@ main h2 {
 /* Стили inner-page */
 
 .breadcrumbs {
-  list-style: none;
   padding: 0;
+
+  list-style: none;
 }
 
 .breadcrumbs li {
@@ -437,23 +471,25 @@ main h2 {
 
 .breadcrumbs a {
   color: #000000;
+
   background-color: #ffffff;
 }
 
 .page-title {
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
   font-family: "Cuprum", "Arial", sans-serif;
   color: #32425c;
+  text-transform: uppercase;
+
   background-color: #f2f6f8;
 }
 
 .filters {
-  text-transform: uppercase;
   font-size: 15px;
   line-height: 20px;
+  text-transform: uppercase;
 }
 
 .filters fieldset {
@@ -461,23 +497,25 @@ main h2 {
 }
 
 .filters legend {
-  font-family: 17px;
-  line-height: 30px;
   font-weight: 700;
+  line-height: 30px;
+  font-family: 17px;
 }
 
 .field-name,
 .catalog-sorting-form ul {
   line-height: 18px;
   text-transform: uppercase;
+
   background-color: #f7f3ec;
 }
 
 .price-controls input[type="text"] {
-  background-color: #f7f3ec;
-  border: none;
   font-size: 17px;
   line-height: 18px;
+
+  background-color: #f7f3ec;
+  border: none;
 }
 
 .filters .producers {
@@ -491,42 +529,49 @@ main h2 {
 
 .filters .button,
 .catalog .button {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
+
   background-color: #ffffff;
-  font-weight: 400;
   border: solid 1px #e5e5e5;
 }
 
 .catalog-sorting-form ul,
 .catalog-list,
 .catalog-pagination-list {
-  list-style: none;
   padding: 0;
+
+  list-style: none;
 }
 
 .catalog-sorting-form a {
   color: rgba(0, 0, 0, 0.3);
-  background-color: #f7f3ec;
   text-decoration: underline;
-  text-decoration-style: dotted;
+
+  background-color: #f7f3ec;
+
   text-decoration-color: #ee3643;
+  text-decoration-style: dotted;
 }
 
 .catalog-sorting-form a:hover {
   color: #000000;
-  background-color: #f7f3ec;
-  text-decoration-style: solid;
   text-decoration: underline;
+
+  background-color: #f7f3ec;
+
   text-decoration-color: #ee3643;
+  text-decoration-style: solid;
 }
 
 .catalog-sorting-form .active {
   color: #ee3643;
-  background-color: #f7f3ec;
   text-decoration: none;
+
+  background-color: #f7f3ec;
 }
 
 .catalog-pagination-list a:hover {
@@ -551,30 +596,31 @@ main h2 {
 }
 
 .reference-information span {
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
+  font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
-
 }
 
 /* Футер главной */
 
 .main-footer {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #f3f7f9;
+
   background-color: #32425c;
 }
 
 .footer-contacts b {
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
-  background-color: #ee3643;
   text-transform: uppercase;
-  font-weight: 400;
+
+  background-color: #ee3643;
 }
 
 .footer-contacts address {
@@ -583,23 +629,27 @@ main h2 {
 
 .footer-site-navigation ul,
 .footer-products-navigation ul {
-  list-style: none;
   padding: 0;
+
+  list-style: none;
 }
 
 .footer-site-navigation a {
   color: #f3f7f9;
+
   background-color: #32425c;
 }
 
 .footer-products-navigation a {
   color: #ffd180;
+
   background-color: #32425c;
 }
 
 .footer-site-navigation a:hover,
 .footer-products-navigation a:hover {
   text-decoration: underline;
+
   text-decoration-color: inherit;
 }
 
@@ -609,23 +659,27 @@ main h2 {
 }
 
 .socials-and-feedback {
-  background-color: #293449;
   font-size: 16px;
   line-height: 18px;
+
+  background-color: #293449;
 }
 
 .socials-and-feedback span {
   color: #ffd180;
+
   background-color: #293449;
 }
 
 .socials-and-feedback span:hover {
   text-decoration: underline;
+
   text-decoration-color: inherit;
 }
 
 .socials-and-feedback span:active {
   color: #ee3643;
+
   background-color: #293449;
 }
 
@@ -636,11 +690,12 @@ main h2 {
 
 .write-us-form input,
 .write-us-form textarea {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  font-weight: 400;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #a9a9a9;
+
   background-color: #ffffff;
   border: solid 2px #dee3e4;
   border-radius: 1px;
@@ -657,10 +712,10 @@ main h2 {
 }
 
 .write-us-form label {
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 18px;
-  font-weight: 400;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .modal-button-wrapper {
@@ -668,19 +723,21 @@ main h2 {
 }
 
 .modal-large-map img {
-  background-color: #ffffff;
-  box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
   width: 940px;
   height: 446px;
+
+  background-color: #ffffff;
+  box-shadow: 0 0 14.72px 1.28px rgba(47, 42, 43, 0.5);
 }
 
 .modal-product-in-basket p {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .continue-shopping-button {
   color: #000000;
+
   background-color: #ffffff;
 }
