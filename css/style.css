@@ -66,6 +66,7 @@ a {
   color: #ffffff;
 
   background-color: #293449;
+  display: b
 }
 
 .header-top .logo {
@@ -229,8 +230,9 @@ a {
   width: 940px;
   margin: 0;
   padding: 0;
-
+  flex-wrap: wrap;
   list-style: none;
+  background-color: #32425c;
 }
 
 .main-navigation a {
