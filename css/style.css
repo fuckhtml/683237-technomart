@@ -5,6 +5,7 @@ font-family: 'PT Sans', sans-serif;
  */
 
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -15,8 +16,6 @@ body {
   color: #000000;
 
   background-color: #ffffff;
-
-  min-width: 1200px;
 }
 
 a {
@@ -25,20 +24,24 @@ a {
 
 .visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
   overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
 }
 
 .main-header {
+  margin-bottom: 59px;
+
   font-family: "Cuprum", "Arial", sans-serif;
 
   background-color: #f2f6f8;
-  margin-bottom: 59px;
 }
 
 .header-top {
@@ -117,23 +120,25 @@ a {
 }
 
 .order-block {
+  display: flex;
+
   font-size: 17px;
   line-height: 18px;
-  display: flex;
 }
 
 .header-middle {
   display: flex;
   justify-content: space-between;
-  width: 940px;
   align-items: flex-start;
+  width: 940px;
 }
 
 .header-contacts {
-  font-size: 14px;
-  color: #32425c;
   display: flex;
   width: 621px;
+
+  font-size: 14px;
+  color: #32425c;
 }
 
 .header-contacts,
@@ -168,10 +173,11 @@ a {
 }
 
 .user-block a {
+  width: 300px;
+
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-  width: 300px;
 
   background-color: #ffffff;
 }
@@ -190,12 +196,12 @@ a {
 }
 
 .user-block-menu {
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
   display: flex;
   justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .user-block-menu a {
@@ -212,29 +218,30 @@ a {
 }
 
 .main-navigation {
+  width: 940px;
+
   font-size: 17px;
   line-height: 17px;
-  width: 940px;
 }
 
 .site-navigation {
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
   display: flex;
   width: 940px;
+  margin: 0;
+  padding: 0;
 
+  list-style: none;
 }
 
 .main-navigation a {
-  color: #ffffff;
-
-  background-color: #32425c;
   padding-top: 22px;
   padding-right: 33px;
   padding-bottom: 26px;
   padding-left: 34px;
+
+  color: #ffffff;
+
+  background-color: #32425c;
 }
 
 .main-navigation a:hover {
@@ -248,11 +255,12 @@ a {
 }
 
 .promo {
-  font-family: "Cuprum", "Arial", sans-serif;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 53px;
   width: 940px;
+  margin-bottom: 53px;
+
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .promo-item {
@@ -331,10 +339,11 @@ main h2 {
 }
 
 .title-wrapper {
-  background-color: #f9f5f0;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+
+  background-color: #f9f5f0;
 }
 
 .title-wrapper h2 {
@@ -344,16 +353,17 @@ main h2 {
 }
 
 .popular-goods {
-  margin-bottom: 21px;
   width: 940px;
+  margin-bottom: 21px;
 }
 
 .popular-goods-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .popular-goods-list li {
@@ -365,11 +375,12 @@ main h2 {
 }
 
 .catalog-item {
+  width: 218px;
+
   vertical-align: middle;
   text-align: center;
 
   border: solid 1px #eaeaea;
-  width: 218px;
 }
 
 .catalog-item:hover {
@@ -453,29 +464,31 @@ main h2 {
 }
 
 .popular-producers {
-  margin-bottom: 85px;
   width: 940px;
+  margin-bottom: 85px;
 }
 
 .popular-producers-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .popular-producers-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 218px;
+  min-height: 145px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
   text-align: center;
 
   border: solid 1px #eaeaea;
-  width: 218px;
-  min-height: 145px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-right: 20px;
 }
 
 .popular-producers-list li:nth-child(4n) {
@@ -496,14 +509,16 @@ main h2 {
 }
 
 .services-wrapper {
-  background-color: #f4f8fa;
   width: 100%;
   margin-bottom: 82px;
+
+  background-color: #f4f8fa;
 }
 
 .services {
-  background-color: #f4f8fa;
   width: 940px;
+
+  background-color: #f4f8fa;
 }
 
 .services-description {
@@ -523,8 +538,8 @@ main h2 {
 }
 
 .services-list {
-  padding: 0;
   margin: 0;
+  padding: 0;
 
   list-style: none;
 }
@@ -562,7 +577,7 @@ main h2 {
 
 /* конец слайдера */
 
-.about-company  {
+.about-company {
   display: flex;
   justify-content: space-between;
   width: 940px;
@@ -737,13 +752,14 @@ main h2 {
 /* Футер главной */
 
 .main-footer {
+  margin-top: 86px;
+
   font-size: 18px;
   line-height: 24px;
   font-family: "Cuprum", "Arial", sans-serif;
   color: #f3f7f9;
 
   background-color: #32425c;
-  margin-top: 86px;
 }
 
 .contacts-and-nav-wrapper {
@@ -775,12 +791,12 @@ main h2 {
 
 .footer-site-navigation ul,
 .footer-products-navigation ul {
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
   display: flex;
   justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .footer-site-navigation a {
@@ -849,8 +865,8 @@ main h2 {
 
 .footer-feedback {
   width: 140px;
-  margin-left: auto;
   margin-right: 45px;
+  margin-left: auto;
 }
 
 .footer-developer {
