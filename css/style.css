@@ -37,8 +37,6 @@ a {
 }
 
 .main-header {
-  margin-bottom: 59px;
-
   font-family: "Cuprum", "Arial", sans-serif;
 
   background-color: #f2f6f8;
@@ -48,25 +46,25 @@ a {
   color: #ffffff;
 
   background-color: #293449;
-  /* width: 100%; */
 }
 
 .container {
-  width: 960px;
+  width: 940px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
 .header-top-wrapper {
   display: flex;
-  width: 940px;
+  flex-wrap: wrap;
 }
 
 .header-top a {
+  display: block;
+
   color: #ffffff;
 
   background-color: #293449;
-  display: b
 }
 
 .header-top .logo {
@@ -131,7 +129,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 940px;
 }
 
 .header-contacts {
@@ -219,7 +216,7 @@ a {
 }
 
 .main-navigation {
-  width: 940px;
+  padding-bottom: 60px;
 
   font-size: 17px;
   line-height: 17px;
@@ -227,22 +224,24 @@ a {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   width: 940px;
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
+
   list-style: none;
+
   background-color: #32425c;
 }
 
 .main-navigation a {
+  display: block;
   padding-top: 22px;
   padding-right: 33px;
   padding-bottom: 26px;
   padding-left: 34px;
 
   color: #ffffff;
-  display: block;
 
   background-color: #32425c;
 }
@@ -260,7 +259,7 @@ a {
 .promo {
   display: flex;
   flex-wrap: wrap;
-  width: 940px;
+  margin-top: 59px;
   margin-bottom: 53px;
 
   font-family: "Cuprum", "Arial", sans-serif;
@@ -356,13 +355,11 @@ main h2 {
 }
 
 .popular-goods {
-  width: 940px;
   margin-bottom: 21px;
 }
 
 .popular-goods-list {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -377,7 +374,13 @@ main h2 {
   margin-right: 0;
 }
 
+.catalog {
+  width: 700px;
+}
+
 .catalog-item {
+  display: flex;
+  flex-direction: column;
   width: 218px;
 
   vertical-align: middle;
@@ -397,6 +400,7 @@ main h2 {
 }
 
 .catalog-item img {
+  order: -1;
   width: 218px;
   height: 170px;
 }
@@ -406,10 +410,16 @@ main h2 {
 }
 
 .catalog-item p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
 }
+
+
 
 .catalog-item .old-price {
   color: #a9a9a9;
@@ -467,7 +477,6 @@ main h2 {
 }
 
 .popular-producers {
-  width: 940px;
   margin-bottom: 85px;
 }
 
@@ -519,8 +528,6 @@ main h2 {
 }
 
 .services {
-  width: 940px;
-
   background-color: #f4f8fa;
 }
 
@@ -583,7 +590,7 @@ main h2 {
 .about-company {
   display: flex;
   justify-content: space-between;
-  width: 940px;
+  margin-bottom: 86px;
 }
 
 .about-company-left {
@@ -608,6 +615,10 @@ main h2 {
 /* Стили inner-page */
 
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 380px;
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -635,7 +646,16 @@ main h2 {
   background-color: #f2f6f8;
 }
 
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin-bottom: 60px;
+}
+
 .filters {
+  width: 220px;
+
   font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
@@ -688,9 +708,19 @@ main h2 {
   border: solid 1px #e5e5e5;
 }
 
+.catalog-sorting-form {
+  margin-bottom: 20px;
+}
+
+.catalog-sorting-form,
+.catalog-sorting-form ul {
+  display: flex;
+}
+
 .catalog-sorting-form ul,
 .catalog-list,
 .catalog-pagination-list {
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -721,6 +751,27 @@ main h2 {
   text-decoration: none;
 
   background-color: #f7f3ec;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 52px;
+}
+
+.catalog-list li {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.catalog-list li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.catalog-pagination-list {
+  display: flex;
+  justify-content: flex-start;
+  min-width: 300px;
 }
 
 .catalog-pagination-list a:hover {
@@ -755,8 +806,6 @@ main h2 {
 /* Футер главной */
 
 .main-footer {
-  margin-top: 86px;
-
   font-size: 18px;
   line-height: 24px;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -768,7 +817,6 @@ main h2 {
 .contacts-and-nav-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 940px;
 }
 
 .footer-contacts {
@@ -853,7 +901,6 @@ main h2 {
 
 .socials-and-feedback-wrapper {
   display: flex;
-  width: 940px;
 }
 
 .footer-copyright {
