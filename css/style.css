@@ -213,6 +213,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding-top: 46px;
+  padding-bottom: 39px;
 }
 
 .header-contacts {
@@ -228,8 +230,6 @@ a {
 .header-contacts,
 .user-block {
   margin: 0;
-  margin-top: 46px;
-  margin-bottom: 39px;
 }
 
 
@@ -339,7 +339,6 @@ a {
 
 .login:hover,
 .registration:hover,
-.user-block-profile:hover,
 .user-block-menu a:hover {
   color: #ee3643;
 }
@@ -856,6 +855,90 @@ main h2 {
 
 /* Стили inner-page */
 
+.inner-page .header-middle {
+  padding-bottom: 38px;
+}
+
+.inner-page .user-block {
+  flex-direction: column;
+}
+
+.user-block-profile {
+  width: 299px;
+  padding-left: 47px;
+  box-sizing: border-box;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
+}
+
+.user-block-profile::before {
+  content: "";
+  width: 20px;
+  height: 18px;
+  top: 13px;
+  left: 14px;
+  position: absolute;
+  background-image: url("../img/icon-user.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.user-block-profile:hover::before {
+  opacity: 1;
+}
+
+.user-block-profile:active::before {
+  opacity: 0.3;
+}
+
+.user-block-profile::after {
+  content: "";
+  width: 20px;
+  height: 17px;
+  top: 14px;
+  right: 9px;
+  position: absolute;
+  background-image: url("../img/icon-logout.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.user-block-profile:hover::after {
+  opacity: 1;
+}
+
+.user-block-profile:active::after {
+  opacity: 0.3;
+}
+
+.user-block-menu {
+  margin-top: 5px;
+}
+
+.user-block-menu a {
+  padding-right: 14px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.user-block-menu a::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: #32425c;
+  border-radius: 50%;
+  top: 8px;
+  left: 2px;
+}
+
+.user-block-menu:first-child a::before {
+  display: none;
+}
+
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
@@ -938,8 +1021,7 @@ main h2 {
   background-color: #ee3643;
 }
 
-.filters .button,
-.catalog .button {
+.filters .button {
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -1014,6 +1096,17 @@ main h2 {
   display: flex;
   justify-content: flex-start;
   min-width: 300px;
+}
+
+.catalog-pagination-list .button {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+
+  background-color: #ffffff;
+  border: solid 1px #e5e5e5;
 }
 
 .catalog-pagination-list a:hover {
