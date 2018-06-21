@@ -545,35 +545,35 @@ a {
   position: relative;
   background-image: url("../img/promo-icon-1.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 213px 31px;
 }
 
 .promo-2 {
   background-color: #3bbce3;
   background-image: url("../img/promo-icon-2.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 197px 33px;
 }
 
 .promo-3 {
   background-color: #dc91d8;
   background-image: url("../img/promo-icon-3.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 191px 31px;
 }
 
 .promo-4 {
   background-color: #8ed78f;
   background-image: url("../img/promo-icon-4.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 196px 26px;
 }
 
 .promo-5 {
   background-color: #ffc047;
   background-image: url("../img/promo-icon-5.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 191px 32px;
 }
 
 .slider {
