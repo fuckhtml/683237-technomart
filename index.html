@@ -52,25 +52,25 @@
 
       <nav class="main-navigation container">
         <ul class="site-navigation">
-          <li>
+          <li class="navigation-item">
             <a href="#">Главная</a>
           </li>
-          <li>
+          <li class="navigation-item">
             <a href="#">Компания</a>
           </li>
-          <li>
+          <li class="navigation-item">
             <a href="catalog.html">Каталог</a>
           </li>
-          <li>
+          <li class="navigation-item">
             <a href="#">Новости</a>
           </li>
-          <li>
+          <li class="navigation-item">
             <a href="#">Спецпредложения</a>
           </li>
-          <li>
+          <li class="navigation-item">
             <a href="#">Доставка</a>
           </li>
-          <li>
+          <li class="navigation-item">
             <a href="#">Контакты</a>
           </li>
         </ul>
@@ -82,36 +82,46 @@
       <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта «Техномарт»</h1>
       <section class="promo container">
         <h2 class="visually-hidden">Предложения и акции</h2>
-        <div class="promo-item promo-1">
-          <h3>Материалы</h3>
-          <a class="button promo-button" href="#">На любой вкус</a>
+        <div class="promo-item-wrapper">
+          <div class="promo-item promo-1">
+            <h3>Материалы</h3>
+            <a class="button promo-button" href="#">На любой вкус</a>
+          </div>
+          <div class="promo-item promo-2">
+            <h3>Инструмент</h3>
+            <a class="button promo-button" href="#">На все случаи</a>
+          </div>
+          <div class="promo-item promo-3">
+            <h3>Техника</h3>
+            <a class="button promo-button" href="#">Для стройки</a>
+          </div>
+          <div class="promo-item slider">
+            <div class="slider-controls visually-hidden">
+              <label for="products-section-1">Первый</label>
+              <label for="products-section-2">Второй</label>
+            </div>
+            <ul class="slider-list">
+              <li class="slider-item">
+                <h3>Дрели</h3>
+                <p>Соседям на радость!</p>
+                <a class="button slider-button" href="#">Открыть каталог</a>
+              </li>
+              <li class="slider-item">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+                <a class="button slider-button" href="#">Открыть каталог</a>
+              </li>
+            </ul>
+          </div>
+          <div class="promo-item promo-4">
+            <h3>Скидки 50%</h3>
+            <a class="button promo-button" href="#">На 350 товаров</a>
+          </div>
+          <div class="promo-item promo-5">
+            <h3>Доставка</h3>
+            <a class="button promo-button" href="#">Бесплатно</a>
+          </div>
         </div>
-        <div class="promo-item promo-2">
-          <h3>Инструмент</h3>
-          <a class="button promo-button" href="#">На все случаи</a>
-        </div>
-        <div class="promo-item promo-3">
-          <h3>Техника</h3>
-          <a class="button promo-button" href="#">Для стройки</a>
-        </div>
-        <div class="promo-item promo-4">
-          <h3>Скидки 50%</h3>
-          <a class="button promo-button" href="#">На 350 товаров</a>
-        </div>
-        <div class="promo-item promo-5">
-          <h3>Доставка</h3>
-          <a class="button promo-button" href="#">Бесплатно</a>
-        </div>
-        <!-- Здесь будет слайдер -->
-        <div class="slider">
-          Дрели
-          Соседям на радость!
-          <a class="button slider-button" href="#">Открыть каталог</a>
-          Перфораторы
-          Настоящие мужские игрушки
-          <a class="button slider-button" href="#">Открыть каталог</a>
-        </div>
-        <!-- Конец слайдера -->
       </section>
 
       <section class="popular-goods container">
@@ -129,7 +139,7 @@
                 <span class="old-price">32500 Р.</span>
                 <span class="new-price">25500 Р.</span>
               </p>
-              <div>
+              <div class="actions">
                 <a class="button buy-button" href="#">Купить</a>
                 <a class="button to-bookmarks-button" href="#">В закладки</a>
               </div>
@@ -143,7 +153,7 @@
                 <span class="old-price">22500 Р.</span>
                 <span class="new-price">15500 Р.</span>
               </p>
-              <div>
+              <div class="actions">
                 <a class="button buy-button" href="#">Купить</a>
                 <a class="button to-bookmarks-button" href="#">В закладки</a>
               </div>
@@ -157,7 +167,7 @@
                 <span class="old-price">30500 Р.</span>
                 <span class="new-price">25500 Р.</span>
               </p>
-              <div>
+              <div class="actions">
                 <a class="button buy-button" href="#">Купить</a>
                 <a class="button to-bookmarks-button" href="#">В закладки</a>
               </div>
@@ -171,7 +181,7 @@
                 <span class="old-price"></span>
                 <span class="new-price">12500 Р.</span>
               </p>
-              <div>
+              <div class="actions">
                 <a class="button buy-button" href="#">Купить</a>
                 <a class="button to-bookmarks-button" href="#">В закладки</a>
               </div>
@@ -385,6 +395,7 @@
     </footer>
 
     <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Форма отправки сообщения</h2>
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
         <div>
           <label for="name">Ваше имя:</label>
