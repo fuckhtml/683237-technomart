@@ -465,6 +465,19 @@ a {
   font-family: "Cuprum", "Arial", sans-serif;
 }
 
+.new-item::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 59px;
+  top: 0;
+  right: 0;
+  background-image: url("../img/new-flag.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
 .promo-item-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -474,6 +487,10 @@ a {
   width: 300px;
   margin-bottom: 20px;
   margin-right: 20px;
+  padding-top: 21px;
+  padding-left: 23px;
+  padding-bottom: 22px;
+  box-sizing: border-box;
 }
 
 .promo-item:nth-child(3n) {
@@ -485,7 +502,9 @@ a {
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
-
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
   background-color: #transparent;
 }
 
@@ -510,6 +529,7 @@ a {
 .promo-button {
   background-color: rgba(0, 0, 0, 0.1);
   width: 135px;
+  margin-left: 2px;
 }
 
 .promo-button:hover {
@@ -522,22 +542,38 @@ a {
 
 .promo-1 {
   background-color: #ffbf47;
+  position: relative;
+  background-image: url("../img/promo-icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .promo-2 {
   background-color: #3bbce3;
+  background-image: url("../img/promo-icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .promo-3 {
   background-color: #dc91d8;
+  background-image: url("../img/promo-icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .promo-4 {
   background-color: #8ed78f;
+  background-image: url("../img/promo-icon-4.svg");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .promo-5 {
   background-color: #ffc047;
+  background-image: url("../img/promo-icon-5.svg");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .slider {
@@ -673,17 +709,20 @@ main h2 {
 
 .catalog-item .actions {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 218px;
+  top: -1px;
+  left: -1px;
+  width: 220px;
   height: 164px;
   padding-top: 42px;
   padding-right: 42px;
   padding-bottom: 37px;
-  padding-left: 41px;
+  padding-left: 42px;
   background-color: #ffffff;
   z-index: 2;
   box-sizing: border-box;
+  border-top: solid 1px #eaeaea;
+  border-right: solid 1px #eaeaea;
+  border-left: solid 1px #eaeaea;
 }
 
 .catalog-item .actions{
@@ -697,20 +736,10 @@ main h2 {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.new-item:after {
-  content: "";
-
-  position: absolute;
-  width: 60px;
-  height: 59px;
+.catalog-item.new-item::after {
   top: -1px;
   right: -1px;
-  background-image: url("../img/new-flag.png");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-color: transparent;
 }
-
 
 .catalog-item h3 {
   font-weight: bold;
@@ -748,8 +777,11 @@ main h2 {
 .catalog-item .old-price {
   color: #a9a9a9;
   text-decoration: line-through;
-  parr
   background-color: #ffffff;
+  margin-top: 29px;
+}
+
+.catalog-item[class$="sale"] .old-price {
   margin-top: 11px;
 }
 
@@ -777,10 +809,6 @@ main h2 {
   height: 0;
   border: 19px solid white;
   border-left-color: #ee3643;
-}
-
-article[class$="new-item"] .new-price {
-  margin-top: 28px;
 }
 
 .buy-button,
