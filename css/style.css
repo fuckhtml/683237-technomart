@@ -1,8 +1,9 @@
-/* Шрифты на будущее */
-/*
-font-family: 'Cuprum', sans-serif;
-font-family: 'PT Sans', sans-serif;
- */
+@font-face {
+  font-family: "technomart-icons";
+  src:
+    local("technomart-icons"),
+    url("../fonts/technomart-icons.woff") format("woff");
+}
 
 body {
   min-width: 1200px;
@@ -68,7 +69,12 @@ a {
   background-color: #293449;
 }
 
+/* не работает тень */
+.index-logo {
+}
+
 .header-top .logo {
+  box-shadow: 0 5px 0 0 #b52933;
   width: 220px;
   background-color: #ee3643;
   text-align: center;
@@ -78,10 +84,13 @@ a {
 
 .header-top .logo:hover {
   background-color: #ca2c37;
+  box-shadow: 0 5px 0 0 #b52933;
+
 }
 
 .header-top .logo:active {
   background-color: #ba2732;
+  box-shadow: 0 5px 0 0 #8e1e26;
 }
 
 .logo b {
@@ -94,9 +103,30 @@ a {
 .order-block {
   display: flex;
   justify-content: flex-end;
-  /* text-align: center; */
   font-size: 17px;
   line-height: 18px;
+}
+
+.search-form {
+  position: relative;
+}
+
+.search-form::before{
+  content:'\0041';
+  font-family: "technomart-icons";
+  position: absolute;
+  top: 11px;
+  left: 17px;
+  opacity: 0.3;
+}
+
+.search-form:hover::before{
+  opacity: 1;
+}
+
+.search-form:active::before{
+  opacity: 1;
+  color: red;
 }
 
 .search-form input[type="search"] {
@@ -107,6 +137,9 @@ a {
   padding-left: 48px;
   padding-top: 11px;
   padding-bottom: 12px;
+  /* background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 17px; */
 }
 
 .search-form input::placeholder {
@@ -118,6 +151,9 @@ a {
 }
 
 .search-form input[type="search"]:active {
+  background-image: url("../img/search-background.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
   color: #000000;
   background-color: #ffffff;
 }
@@ -394,9 +430,10 @@ a {
   display: block;
   padding-top: 20px;
   padding-right: 30px;
-  padding-bottom: 18px;
+  padding-bottom: 23px;
   padding-left: 30px;
 
+  box-shadow: inset 0px -5px 0 0 rgb(41, 52, 73);
   color: #ffffff;
 
   background-color: #32425c;
@@ -423,7 +460,7 @@ a {
 
 .promo {
   margin-top: 59px;
-  margin-bottom: 53px;
+  margin-bottom: 33px;
 
   font-family: "Cuprum", "Arial", sans-serif;
 }
@@ -454,6 +491,7 @@ a {
 
 .button {
   font-weight: normal;
+  display: inline-block;
   font-size: 14px;
   line-height: 18px;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -464,10 +502,14 @@ a {
 
   background-color: #ee3643;
   border: none;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  border-radius: 2px;
 }
 
 .promo-button {
   background-color: rgba(0, 0, 0, 0.1);
+  width: 135px;
 }
 
 .promo-button:hover {
@@ -504,6 +546,11 @@ a {
   width: 620px;
   height: 266px;
   /* position: relative; */
+}
+
+.slider .button,
+.services-slider .button {
+  width: 195px;
 }
 
 .slider-list {
@@ -566,6 +613,10 @@ main h2 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  padding-left: 26px;
+  padding-right: 24px;
+  padding-top: 25px;
+  padding-bottom: 26px;
 
   background-color: #f9f5f0;
 }
@@ -574,6 +625,13 @@ main h2 {
   color: #32425c;
 
   background-color: #f9f5f0;
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.title-wrapper .button {
+  width: 253px;
 }
 
 .popular-goods {
@@ -608,6 +666,7 @@ main h2 {
   vertical-align: middle;
   text-align: center;
 
+  padding-bottom: 20px;
   border: solid 1px #eaeaea;
   position: relative;
 }
@@ -618,7 +677,7 @@ main h2 {
   left: 0;
   width: 218px;
   height: 164px;
-  padding-top: 43px;
+  padding-top: 42px;
   padding-right: 42px;
   padding-bottom: 37px;
   padding-left: 41px;
@@ -638,10 +697,30 @@ main h2 {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
+.new-item:after {
+  content: "";
+
+  position: absolute;
+  width: 60px;
+  height: 59px;
+  top: -1px;
+  right: -1px;
+  background-image: url("../img/new-flag.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+
 .catalog-item h3 {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
+  margin: 0;
+  padding: 0;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: 9px;
 }
 
 .catalog-item img {
@@ -658,25 +737,50 @@ main h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  padding: 0;
 
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
 }
 
-
-
 .catalog-item .old-price {
   color: #a9a9a9;
   text-decoration: line-through;
-
+  parr
   background-color: #ffffff;
+  margin-top: 11px;
 }
 
 .catalog-item .new-price {
   color: #ffffff;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 36px;
+  padding-right: 40px;
 
   background-color: #ee3643;
+  margin-left: 42px;
+  margin-right: auto;
+  position: relative;
+  border-radius: 3px;
+}
+
+.catalog-item .new-price::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: 19px solid white;
+  border-left-color: #ee3643;
+}
+
+article[class$="new-item"] .new-price {
+  margin-top: 28px;
 }
 
 .buy-button,
@@ -686,18 +790,40 @@ main h2 {
 
   border: solid 3px #63a63e;
   border-radius: 2px;
+  width: 135px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  padding-left: 3px;
 }
 
 .buy-button {
   color: #ffffff;
 
   background-color: #63a63e;
-  /* box-shadow: inset 0px -3px 0 0 #367315; */
+  margin-bottom: 8px;
+  position: relative;
 }
+
+.buy-button::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  opacity: 0.3;
+  left: 11px;
+  top: 8px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 .to-bookmarks-button {
   color: #32425c;
-
+  border-bottom-color:#367315;
   background-color: #ffffff;
 }
 
@@ -722,7 +848,7 @@ main h2 {
 }
 
 .popular-producers {
-  margin-bottom: 85px;
+  margin-bottom: 65px;
 }
 
 .popular-producers-list {
@@ -754,7 +880,7 @@ main h2 {
 .popular-producers-list a {
   display: flex;
   width: 218px;
-  min-height: 145px;
+  min-height: 143px;
   border: solid 1px #eaeaea;
   justify-content: center;
   align-items: center;
@@ -766,6 +892,7 @@ main h2 {
 
 .services {
   background-color: #f4f8fa;
+  padding-top: 65px;
 }
 
 .services-wrapper {
@@ -775,6 +902,13 @@ main h2 {
 .services-description {
   width: 400px;
 }
+
+.services-description h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 26px;
+}
+
 
 /* слайдер */
 .services-slider b {
@@ -845,8 +979,16 @@ main h2 {
   font-family: "Cuprum", "Arial", sans-serif;
 }
 
+.about-company-left .button {
+  width: 220px;
+}
+
 .about-company-right {
   width: 300px;
+}
+
+.about-company-right .button {
+  width: 100%;
 }
 
 .about-company .modal-map {
