@@ -1705,11 +1705,49 @@ main h2 {
 
 .footer-socials {
   width: 133px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 35px;
 }
 
-.footer-socials a {
+.social-button {
   color: inherit;
   font-style: inherit;
+  width: 42px;
+  height: 42px;
+  background-color: rgb(33, 42, 58);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.social-button:hover {
+  background-color: rgb(238, 54, 67);
+}
+
+.social-button:active {
+  background-color: rgb(238, 54, 67);
+}
+
+.social-button-vk {
+  background-image: url("../img/footer-vk-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-button-fb {
+  background-image: url("../img/footer-fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-button-inst {
+  background-image: url("../img/footer-inst-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer-feedback {
