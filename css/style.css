@@ -1767,10 +1767,10 @@ main h2 {
   position: fixed;
 
   background-color: #ffffff;
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 .modal-write-us {
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
   top: 120px;
   left: 50%;
 
@@ -1778,6 +1778,7 @@ main h2 {
   margin-left: -310px;
 
   border-top: 7px solid #ff5358;
+  display: none;
 }
 
 .modal-close {
@@ -1805,8 +1806,6 @@ main h2 {
 .modal-close::after {
   transform: rotate(-45deg);
 }
-
-
 
 .fields-wrapper {
   display: flex;
@@ -1884,18 +1883,71 @@ main h2 {
   width: 100%;
 }
 
+.modal-large-map {
+  top: 50%;
+  left: 50%;
+  width: 940px;
+  height: 446px;
+  margin-left: -470px;
+  margin-top: -223px;
+  background-color: #eeeae3;
+  display: none;
+}
+
 .modal-large-map img {
   width: 940px;
   height: 446px;
 
   background-color: #ffffff;
-  box-shadow: 0 0 14.72px 1.28px rgba(47, 42, 43, 0.5);
+  box-shadow: 0 0 18px 1.28px rgba(47, 42, 43, 0.5);
+}
+
+.modal-product-in-basket {
+  top: 411px;
+  left: 50%;
+
+  width: 620px;
+  margin-left: -310px;
+  background-color: #ffffff;
+  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+  border-top: 7px solid #ff5358;
+  display: none;
 }
 
 .modal-product-in-basket p {
   font-size: 30px;
   line-height: 30px;
   font-family: "Cuprum", "Arial", sans-serif;
+  padding: 0;
+  margin: 0;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-top: 65px;
+  margin-bottom: 68px;
+  padding-left: 99px;
+  position: relative;
+}
+
+.modal-product-in-basket p::before {
+  position: absolute;
+  content: "";
+  width: 66px;
+  height: 66px;
+  left: 0;
+  top: -17px;
+  background-image: url("../img/pop-up-product-added-to-cart-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.modal-button-wrapper {
+  padding: 37px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-button-wrapper .button {
+  width: 220px;
 }
 
 .continue-shopping-button {
