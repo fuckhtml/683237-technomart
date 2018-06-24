@@ -134,7 +134,7 @@
         <ul class="popular-goods-list">
           <li>
             <article class="catalog-item sale">
-              <h3>Перфоратор <span class="text-uppercase">bosch bfg 9000</span></h3>
+              <h3 class="item-headline"><a href="#">Перфоратор <span class="text-uppercase">bosch bfg 9000</a></span></h3>
               <img src="img/bosch-bfg-9000.jpg" alt="Иллюстрация перфоратор bosch bfg 9000" width="218" height="170">
               <p>
                 <span class="old-price">32500 Р.</span>
@@ -148,7 +148,7 @@
           </li>
           <li>
             <article class="catalog-item sale">
-              <h3>Перфоратор <span class="text-uppercase">bosch bfg 3000</span></h3>
+              <h3 class="item-headline"><a href="#">Перфоратор <span class="text-uppercase">bosch bfg 3000</span></a></h3>
               <img src="img/bosch-bfg-3000.jpg" alt="Иллюстрация перфоратор bosch bfg 3000" width="218" height="170">
               <p>
                 <span class="old-price">22500 Р.</span>
@@ -162,7 +162,7 @@
           </li>
           <li>
             <article class="catalog-item sale">
-              <h3>Перфоратор <span class="text-uppercase">bosch bfg 6000</span></h3>
+              <h3 class="item-headline"><a href="#">Перфоратор <span class="text-uppercase">bosch bfg 6000</span></a></h3>
               <img src="img/bosch-bfg-6000.jpg" alt="Иллюстрация перфоратор bosch bfg 6000" width="218" height="170">
               <p>
                 <span class="old-price">30500 Р.</span>
@@ -176,7 +176,7 @@
           </li>
           <li>
             <article class="catalog-item new-item">
-              <h3>Перфоратор <span class="text-uppercase">bosch bfg 2000</span></h3>
+              <h3 class="item-headline"><a href="#">Перфоратор <span class="text-uppercase">bosch bfg 2000</span></a></h3>
               <img src="img/bosch-bfg-2000.jpg" alt="Иллюстрация перфоратор bosch bfg 2000" width="218" height="170">
               <p>
                 <span class="old-price"></span>
@@ -260,6 +260,52 @@
 
           <div class="services-slider">
             <div class="services-slider-controls">
+              <input class="visually-hidden" type="radio" id="service-1" name="service-item" checked>
+              <input class="visually-hidden" type="radio" id="service-2" name="service-item">
+              <input class="visually-hidden" type="radio" id="service-3" name="service-item">
+            </div>
+
+            <div class="slide-list">
+              <div class="slide-item">
+                <b>Доставка</b>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо <br>
+                  к вашему подъезду совершенно бесплатно! <br>
+                  Ведь мы неплохо заработаем, <br>
+                  поднимая его на ваш этаж!
+                </p>
+              </div>
+              <div class="slide-item">
+                <b>Гарантия</b>
+                <p>
+                  Если купленный у нас товар поломается или заискрит, <br>
+                  а также в случае пожара, спровоцированного его возгоранием, <br>
+                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br>
+                  сгоревший товар на новый. <br>
+                  Дом уж восстановите как-нибудь сами.
+                </p>
+              </div>
+              <div class="slide-item">
+                <b>Кредит</b>
+                <p>
+                  Залезть в долговую яму стало проще! <br>
+                  Кредитные консультанты придут вам на помощь.
+                </p>
+                <a class="button" href="#">Отправить заявку</a>
+              </div>
+            </div>
+
+            <div class="toggle-list">
+              <label class="toggle-item" for="service-1">Доставка</label>
+              <label class="toggle-item" for="service-2">Гарантия</label>
+              <label class="toggle-item" for="service-3">Кредит</label>
+            </div>
+
+
+
+
+
+            <!-- <div class="services-slider-controls">
               <i class="active">
                 <a class="active" href="#">Доставка</a>
               </i>
@@ -298,7 +344,7 @@
                 <a class="button" href="#">Отправить заявку</a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </section>
       </div>
 
@@ -426,7 +472,7 @@
             <textarea name="message" id="textarea" rows="5" placeholder="В свободной форме" autocomplete="on" required></textarea>
           </div>
         </div>
-        <div class="modal-button-wrapper">
+        <div class="modal-button-wrapper-1">
           <button class="button" type="submit">Отправить</button>
         </div>
       </form>
@@ -440,7 +486,7 @@
 
     <section class="modal modal-product-in-basket">
       <p>Товар добавлен в корзину!</p>
-      <div class="modal-button-wrapper">
+      <div class="modal-button-wrapper-2">
         <a class="button" href="#">Оформить заказ</a>
         <a class="button continue-shopping-button" href="#">Продолжить покупки</a>
       </div>

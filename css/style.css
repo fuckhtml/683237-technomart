@@ -95,6 +95,7 @@ a {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .order-block {
@@ -150,6 +151,10 @@ a {
   background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
   background-position: 17px 12px;
+}
+
+.search-form input[type="search"]:focus:hover {
+  opacity: 1;
 }
 
 .search-form input[type="search"]:focus::placeholder {
@@ -566,6 +571,7 @@ a {
   background-image: url("../img/promo-icon-1.svg");
   background-repeat: no-repeat;
   background-position: 213px 31px;
+  order: 1;
 }
 
 .promo-2 {
@@ -573,6 +579,7 @@ a {
   background-image: url("../img/promo-icon-2.svg");
   background-repeat: no-repeat;
   background-position: 197px 33px;
+  order: 2;
 }
 
 .promo-3 {
@@ -580,6 +587,7 @@ a {
   background-image: url("../img/promo-icon-3.svg");
   background-repeat: no-repeat;
   background-position: 191px 31px;
+  order: 3;
 }
 
 .promo-4 {
@@ -587,6 +595,7 @@ a {
   background-image: url("../img/promo-icon-4.svg");
   background-repeat: no-repeat;
   background-position: 196px 26px;
+  order: 5;
 }
 
 .promo-5 {
@@ -594,6 +603,7 @@ a {
   background-image: url("../img/promo-icon-5.svg");
   background-repeat: no-repeat;
   background-position: 191px 32px;
+  order: 6;
 }
 
 .slider {
@@ -605,6 +615,7 @@ a {
   color: #ffffff;
 
   background-color: #594945;
+  order: 4;
 }
 
 .slider-controls {
@@ -841,6 +852,10 @@ main h2 {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
+}
+
+.item-headline a {
+  color: #000000;
 }
 
 .catalog-item img {
@@ -1245,11 +1260,12 @@ main h2 {
 .modal-map img {
   width: 300px;
   height: 158px;
+  display: block;
 }
 
 .about-company-right .button {
   width: 100%;
-  margin-top: 32px;
+  margin-top: 40px;
 }
 
 /* Стили inner-page */
@@ -1342,7 +1358,7 @@ main h2 {
   border-radius: 50%;
 }
 
-.user-block-menu:first-child a::before {
+.user-block-menu li:first-child a::before {
   display: none;
 }
 
@@ -1767,18 +1783,19 @@ main h2 {
   position: fixed;
 
   background-color: #ffffff;
+  z-index: 100;
 }
 
 .modal-write-us {
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
   top: 120px;
   left: 50%;
 
+  display: none;
   width: 620px;
   margin-left: -310px;
 
   border-top: 7px solid #ff5358;
-  display: none;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 .modal-close {
@@ -1862,6 +1879,7 @@ main h2 {
 .write-us-form textarea {
   width: 460px;
   min-height: 114px;
+  resize: vertical;
 }
 
 .write-us-form label {
@@ -1873,25 +1891,27 @@ main h2 {
   font-family: "Cuprum", "Arial", sans-serif;
 }
 
-.modal-button-wrapper {
+.modal-button-wrapper-1 {
   padding: 37px 80px;
 
   background-color: #f4f4f4;
 }
 
-.modal-button-wrapper .button {
+.modal-button-wrapper-1 .button {
   width: 100%;
 }
 
 .modal-large-map {
   top: 50%;
   left: 50%;
+
+  display: none;
   width: 940px;
   height: 446px;
-  margin-left: -470px;
   margin-top: -223px;
+  margin-left: -470px;
+
   background-color: #eeeae3;
-  display: none;
 }
 
 .modal-large-map img {
@@ -1906,47 +1926,53 @@ main h2 {
   top: 411px;
   left: 50%;
 
+  display: none;
   width: 620px;
   margin-left: -310px;
+
   background-color: #ffffff;
-  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
   border-top: 7px solid #ff5358;
-  display: none;
+  box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
 }
 
 .modal-product-in-basket p {
+  position: relative;
+
+  margin: 0;
+  margin-top: 65px;
+  margin-right: 80px;
+  margin-bottom: 68px;
+  margin-left: 80px;
+  padding: 0;
+  padding-left: 99px;
+
   font-size: 30px;
   line-height: 30px;
   font-family: "Cuprum", "Arial", sans-serif;
-  padding: 0;
-  margin: 0;
-  margin-right: 80px;
-  margin-left: 80px;
-  margin-top: 65px;
-  margin-bottom: 68px;
-  padding-left: 99px;
-  position: relative;
 }
 
 .modal-product-in-basket p::before {
-  position: absolute;
   content: "";
+  position: absolute;
+  top: -17px;
+  left: 0;
+
   width: 66px;
   height: 66px;
-  left: 0;
-  top: -17px;
+
   background-image: url("../img/pop-up-product-added-to-cart-icon.svg");
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
-.modal-button-wrapper {
-  padding: 37px 80px;
+.modal-button-wrapper-2 {
   display: flex;
   justify-content: space-between;
+  padding: 37px 80px;
+  background-color: #f1f1f1;
 }
 
-.modal-button-wrapper .button {
+.modal-button-wrapper-2 .button {
   width: 220px;
 }
 
