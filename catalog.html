@@ -21,8 +21,11 @@
           </div>
           <div class="order-block">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <label class="visually-hidden" for="search-request">Поиск</label>
-              <input type="search" name="search-request" id="search-request" placeholder="Поиск:" autocomplete="on">
+              <label class="search-field">
+                <span class="visually-hidden">Поиск по сайту:</span>
+                <input type="search" name="search-request" id="search-request" placeholder="Поиск:" autocomplete="on">
+              </label>
+              <button class="button visually-hidden" type="submit" value="Поиск">Поиск</button>
             </form>
             <a href="#" class="bookmarks">Закладки: 0</a>
             <a href="#" class="basket">Корзина: 10</a>
@@ -34,7 +37,8 @@
       <div class="header-middle container">
         <div class="header-contacts">
           <p class="store-description">
-            Интернет-магазин строительных материалов и инструментов для ремонта
+            Интернет-магазин строительных материалов <br>
+            и инструментов для ремонта
           </p>
           <div class="store-contacts">
             <b>+7 (812) 555-05-55</b>
@@ -176,14 +180,14 @@
 
             <div class="catalog-sorting-form">
               <span class="field-name">Сортировка:</span>
-              <ul>
-                <li>
+              <ul class="sorting">
+                <li class="sorting-item">
                   <a class="active" href="#">По цене</a>
                 </li>
-                <li>
+                <li class="sorting-item">
                   <a href="#">По типу</a>
                 </li>
-                <li>
+                <li class="sorting-item">
                   <a href="#">По функционалу</a>
                 </li>
               </ul>
@@ -320,7 +324,7 @@
 
             <ul class="catalog-pagination-list">
               <li class="disable">
-                <a class="button">Предыдущая</a>
+                <a class="button previous">Предыдущая</a>
               </li>
               <li>
                 <a class="button current-page">1</a>
@@ -332,7 +336,7 @@
                 <a class="button" href="#">3</a>
               </li>
               <li>
-                <a class="button" href="#">Следующая</a>
+                <a class="button next" href="#">Следующая</a>
               </li>
             </ul>
           </section>

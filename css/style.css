@@ -501,6 +501,7 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 3;
 
   width: 60px;
   height: 59px;
@@ -1008,6 +1009,7 @@ main h2 {
   color: #ffffff;
 
   background-color: #63a63e;
+  border-bottom-color: #367315;
 }
 
 .buy-button::before {
@@ -1025,17 +1027,24 @@ main h2 {
   opacity: 0.3;
 }
 
+.buy-button:hover::before {
+  opacity: 1;
+}
+
+.buy-button:active::before {
+  opacity: 1;
+}
 
 .to-bookmarks-button {
   color: #32425c;
 
   background-color: #ffffff;
-  border-bottom-color: #367315;
 }
 
 .buy-button:hover {
   background-color: #5fbb2d;
   border: solid 3px #5fbb2d;
+  border-bottom-color: #367315;
 }
 
 .buy-button:active {
@@ -1473,6 +1482,13 @@ main h2 {
   display: none;
 }
 
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin-bottom: 60px;
+}
+
 .page-title {
   margin: 0;
   margin-bottom: 20px;
@@ -1496,7 +1512,6 @@ main h2 {
   display: block;
   box-sizing: border-box;
   width: 220px;
-  margin-bottom: 11px;
   padding: 10px 18px;
 
   font-size: 13px;
@@ -1504,6 +1519,10 @@ main h2 {
   text-transform: uppercase;
 
   background-color: #f7f3ec;
+}
+
+.filters > .field-name {
+  margin-bottom: 11px;
 }
 
 .filter {
@@ -1624,14 +1643,32 @@ main h2 {
   list-style: none;
 }
 
+.filter .producers {
+  position: relative;
+
+  margin-bottom: 20px;
+}
+
+.filter .power {
+  position: relative;
+}
+
+.producers::before,
+.power::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 0;
+
+  width: 220px;
+  height: 1px;
+
+  background-color: #e5e5e5;
+}
+
 .producers legend,
 .power legend {
   margin-bottom: 13px;
-  /* border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5; */
-}
-.filter .producers {
-  margin-bottom: 20px;
 }
 
 .filter-option {
@@ -1760,51 +1797,49 @@ main h2 {
 
   background-color: #ffffff;
   border: solid 1px #e5e5e5;
-}
-
-.catalog-columns {
-  display: flex;
-  justify-content: space-between;
-  width: 940px;
-  margin-bottom: 60px;
+  cursor: pointer;
 }
 
 .catalog-sorting-form {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 20px;
 
   background-color: #f7f3ec;
 }
 
-.catalog-sorting-form ul {
+.sorting {
+  display: flex;
+  justify-content: flex-start;
+  width: 460px;
+
   line-height: 18px;
   text-transform: uppercase;
 
   background-color: #f7f3ec;
 }
 
-.catalog-sorting-form {
-  display: flex;
-  justify-content: space-between;
-}
-
-
-.catalog-sorting-form ul {
-  width: 460px;
-}
-
-
-.catalog-sorting-form,
-.catalog-sorting-form ul {
-  display: flex;
-}
-
-.catalog-sorting-form ul,
+.sorting,
 .catalog-list,
 .catalog-pagination-list {
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.sorting-item {
+  margin-right: auto;
+  margin-left: 0;
+  padding: 10px 0;
+}
+
+.sorting-item:nth-child(1) {
+  margin-right: 71px;
+}
+
+.sorting-item:last-child {
+  margin-right: 106px;
 }
 
 .catalog-sorting-form a {
@@ -1837,7 +1872,7 @@ main h2 {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 52px;
+  margin-bottom: 32px;
 }
 
 .catalog-list li {
@@ -1855,15 +1890,38 @@ main h2 {
   min-width: 300px;
 }
 
+.catalog-pagination-list li {
+  margin-right: 10px;
+}
+
+.catalog-pagination-list li:last-child {
+  margin-right: 0;
+}
+
+.catalog-pagination-list .disable {
+  display: none;
+}
+
 .catalog-pagination-list .button {
+  display: block;
+  width: 36px;
+  padding-top: 9px;
+
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
+  text-align: center;
   color: #000000;
 
   background-color: #ffffff;
   border: solid 1px #e5e5e5;
+  cursor: pointer;
+}
+
+.catalog-pagination-list .previous,
+.catalog-pagination-list .next {
+  width: 138px;
 }
 
 .catalog-pagination-list a:hover {
@@ -1875,6 +1933,8 @@ main h2 {
 }
 
 .catalog-pagination-list .current-page {
+  color: #ffffff;
+
   background-color: #ee3643;
   border-color: #ee3643;
 }
@@ -1888,15 +1948,26 @@ main h2 {
 }
 
 .reference-information {
+  padding-top: 65px;
+  padding-bottom: 68px;
+
   background-color: #f2f6f8;
 }
 
 .reference-information span {
+  display: block;
+  margin-bottom: 26px;
+
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
+}
+
+.reference-information p {
+  margin: 0;
+  padding: 0;
 }
 
 /* Футер главной */
@@ -2197,8 +2268,8 @@ main h2 {
   border: solid 2px #b5b5b5;
 }
 
-.write-us-form input:active,
-.write-us-form textarea:active {
+.write-us-form input:focus,
+.write-us-form textarea:focus {
   border: solid 2px #ee3643;
 }
 
