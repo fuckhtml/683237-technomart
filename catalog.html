@@ -83,16 +83,16 @@
     <main>
       <div class="container">
         <ul class="breadcrumbs">
-          <li>
-            <a href="index.html"><span class="visually-hidden">Главная</span></a>
+          <li class="breadcrumbs-item">
+            <a href="index.html"><span class="visually-hidden">Главная страница</span></a>
           </li>
-          <li>
+          <li class="breadcrumbs-item">
             <a href="#">Каталог</a>
           </li>
-          <li>
+          <li class="breadcrumbs-item">
             <a href="#">Инструмент</a>
           </li>
-          <li class="breadcrumbs-current">Перфораторы</li>
+          <li class="breadcrumbs-item breadcrumbs-current">Перфораторы</li>
         </ul>
 
         <h1 class="page-title">Перфораторы</h1>
@@ -100,53 +100,56 @@
         <div class="catalog-columns">
           <section class="filters">
             <h2 class="visually-hidden">Фильтр</h2>
-
             <span class="field-name">Фильтр:</span>
-            <form class="filters" action="https://echo.htmlacademy.ru" method="get">
+
+            <form class="filter" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="price">
                 <legend>Цена:</legend>
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
-                      <div class="bar">
-                        <div class="toggle min-toggle"></div>
-                        <div class="toggle max-toggle"></div>
-                      </div>
+                      <div class="bar"></div>
                     </div>
+                    <div class="toggle min-toggle"></div>
+                    <div class="toggle max-toggle"></div>
                   </div>
                 </div>
 
-                <div class="price-controls clearfix">
-                  <label class="visually-hidden" for="min-price">Минимальная цена</label>
-                  <input type="text" name="min-price" id="min-price" value="0">
-                  <span>-</span>
-                  <label class="visually-hidden" for="max-price">Максимальная цена</label>
-                  <input type="text" name="max-price" id="max-price" value="30000">
+                <div class="price-controls">
+                  <label class="min-price">
+                    <span class="visually-hidden">Минимальная цена</span>
+                    <input type="text" name="min-price" id="min-price" value="0">
+                  </label>
+                  <span>–</span>
+                  <label class="max-price">
+                    <span class="visually-hidden">Максимальная цена</span>
+                    <input type="text" name="max-price" id="min-price" value="30000">
+                  </label>
                 </div>
               </fieldset>
 
               <fieldset class="producers">
                 <legend>Производители:</legend>
                 <ul>
-                  <li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="producers-bosch" checked>
                     <label for="producers-bosch">Bosch</label>
-                    <input type="checkbox" name="bosch" id="producers-bosch" checked>
                   </li>
-                  <li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="producers-interskol">
                     <label for="producers-interskol">Интерскол</label>
-                    <input type="checkbox" name="interskol" id="producers-interskol">
                   </li>
-                  <li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="producers-makita" checked>
                     <label for="producers-makita">Makita</label>
-                    <input type="checkbox" name="makita" id="producers-makita" checked>
                   </li>
-                  <li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="producers-dewalt">
                     <label for="producers-dewalt">Dewalt</label>
-                    <input type="checkbox" name="dewalt" id="producers-dewalt">
                   </li>
-                  <li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="producers-hitachi">
                     <label for="producers-hitachi">Hitachi</label>
-                    <input type="checkbox" name="hitachi" id="producers-hitachi">
                   </li>
                 </ul>
               </fieldset>
@@ -154,13 +157,13 @@
               <fieldset class="power">
                 <legend>Питание:</legend>
                 <ul>
-                  <li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-type" id="power-battery" value="battery" checked>
                     <label for="power-battery">Аккумуляторные</label>
-                    <input type="radio" name="power-type" id="power-battery" value="battery" checked>
                   </li>
-                  <li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-type" id="power-alternating-current-system" value="alternating-current-system">
                     <label for="power-alternating-current-system">Сетевые</label>
-                    <input type="radio" name="power-type" id="power-alternating-current-system" value="alternating-current-system">
                   </li>
                 </ul>
               </fieldset>

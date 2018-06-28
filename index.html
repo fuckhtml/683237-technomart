@@ -21,8 +21,10 @@
           </div>
           <div class="order-block">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <label class="visually-hidden" for="search-request">Поиск по сайту</label>
-              <input type="search" name="search-request" id="search-request" placeholder="Поиск:" autocomplete="on">
+              <label class="search-field">
+                <span class="visually-hidden">Поиск по сайту:</span>
+                <input type="search" name="search-request" id="search-request" placeholder="Поиск:" autocomplete="on">
+              </label>
               <button class="button visually-hidden" type="submit" value="Поиск">Поиск</button>
             </form>
             <a href="#" class="bookmarks">Закладки: 0</a>
@@ -83,7 +85,7 @@
       <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта «Техномарт»</h1>
       <section class="promo container">
         <h2 class="visually-hidden">Предложения и акции</h2>
-        <div class="promo-item-wrapper">
+        <div class="promo-item-block">
           <div class="promo-item promo-1 new-item">
             <h3>Материалы</h3>
             <a class="button promo-button" href="#">На любой вкус</a>
@@ -96,31 +98,43 @@
             <h3>Техника</h3>
             <a class="button promo-button" href="#">Для стройки</a>
           </div>
-          <div class="promo-item promo-4">
-            <h3>Скидки 50%</h3>
-            <a class="button promo-button" href="#">На 350 товаров</a>
-          </div>
-          <div class="promo-item promo-5">
-            <h3>Доставка</h3>
-            <a class="button promo-button" href="#">Бесплатно</a>
-          </div>
           <div class="slider">
-            <div class="slider-controls">
-              <i class="active"></i>
-              <i></i>
+            <input class="visually-hidden" type="radio" id="slider-control-1" name="slider-control-items">
+            <input class="visually-hidden" type="radio" id="slider-control-2" name="slider-control-items" checked>
+            <div class="slider-list">
+              <div class="slider-item">
+                <label class="before-control" for="slider-control-2"><span class="visually-hidden">Назад</span></label>
+                <div class="promo-slide-content">
+                  <h3>Перфораторы</h3>
+                  <p>Настоящие мужские игрушки</p>
+                  <a class="button slider-button" href="catalog.html">Открыть каталог</a>
+                </div>
+                <label class="next-control" for="slider-control-2"><span class="visually-hidden">Вперед</span></label>
+              </div>
+              <div class="slider-item">
+                <label class="before-control" for="slider-control-1"><span class="visually-hidden">Назад</span></label>
+                <div class="promo-slide-content">
+                  <h3>Дрели</h3>
+                  <p>Соседям на радость!</p>
+                  <a class="button slider-button" href="catalog.html">Открыть каталог</a>
+                </div>
+                <label class="next-control" for="slider-control-1"><span class="visually-hidden">Вперед</span></label>
+              </div>
             </div>
-            <ul class="slider-list">
-              <li class="slider-item">
-                <h3>Дрели</h3>
-                <p>Соседям на радость!</p>
-                <a class="button slider-button" href="catalog.html">Открыть каталог</a>
-              </li>
-              <li class="slider-item">
-                <h3>Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
-                <a class="button slider-button" href="catalog.html">Открыть каталог</a>
-              </li>
-            </ul>
+            <div class="promo-toggle-list">
+              <label class="promo-toggle-item" for="slider-control-1"><span class="visually-hidden">1 слайд</span></label>
+              <label class="promo-toggle-item" for="slider-control-2"><span class="visually-hidden">2 слайд</span></label>
+            </div>
+          </div>
+          <div class="promo-item-wrapper">
+            <div class="promo-item promo-4">
+              <h3>Скидки 50%</h3>
+              <a class="button promo-button" href="#">На 350 товаров</a>
+            </div>
+            <div class="promo-item promo-5">
+              <h3>Доставка</h3>
+              <a class="button promo-button" href="#">Бесплатно</a>
+            </div>
           </div>
         </div>
       </section>
@@ -259,12 +273,10 @@
           </div>
 
           <div class="services-slider">
-            <div class="services-slider-controls">
-              <input class="visually-hidden" type="radio" id="service-1" name="service-item" checked>
-              <input class="visually-hidden" type="radio" id="service-2" name="service-item">
-              <input class="visually-hidden" type="radio" id="service-3" name="service-item">
-            </div>
 
+            <input class="visually-hidden" type="radio" id="service-1" name="service-items" checked>
+            <input class="visually-hidden" type="radio" id="service-2" name="service-items">
+            <input class="visually-hidden" type="radio" id="service-3" name="service-items">
             <div class="slide-list">
               <div class="slide-item">
                 <b>Доставка</b>
@@ -294,57 +306,12 @@
                 <a class="button" href="#">Отправить заявку</a>
               </div>
             </div>
-
             <div class="toggle-list">
               <label class="toggle-item" for="service-1">Доставка</label>
               <label class="toggle-item" for="service-2">Гарантия</label>
               <label class="toggle-item" for="service-3">Кредит</label>
             </div>
-
-
-
-
-
-            <!-- <div class="services-slider-controls">
-              <i class="active">
-                <a class="active" href="#">Доставка</a>
-              </i>
-              <i>
-                <a href="#">Гарантия</a>
-              </i>
-                <a href="#">Кредит</a>
-              </i>
-            </div>
-            <ul class="services-slider-list">
-              <li class="services-slider-item">
-                <b>Доставка</b>
-                <p>
-                  Мы с удовольствием доставим ваш товар прямо <br>
-                  к вашему подъезду совершенно бесплатно! <br>
-                  Ведь мы неплохо заработаем, <br>
-                  поднимая его на ваш этаж!
-                </p>
-              </li>
-              <li class="services-slider-item">
-                <b>Гарантия</b>
-                <p>
-                  Если купленный у нас товар поломается или заискрит, <br>
-                  а также в случае пожара, спровоцированного его возгоранием, <br>
-                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br>
-                  сгоревший товар на новый. <br>
-                  Дом уж восстановите как-нибудь сами.
-                </p>
-              </li>
-              <li class="services-slider-item">
-                <b>Кредит</b>
-                <p>
-                  Залезть в долговую яму стало проще! <br>
-                  Кредитные консультанты придут вам на помощь.
-                </p>
-                <a class="button" href="#">Отправить заявку</a>
-              </li>
-            </ul>
-          </div> -->
+          </div>
         </section>
       </div>
 
