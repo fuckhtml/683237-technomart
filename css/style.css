@@ -101,10 +101,11 @@ a {
 
 .order-block {
   display: flex;
-  justify-content: flex-end;
-
+  justify-content: flex-start;
+  flex-wrap: wrap;
   font-size: 17px;
   line-height: 18px;
+  width: 720px;
 }
 
 /* переделка поля поискв */
@@ -276,6 +277,7 @@ a {
 .header-contacts {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 590px;
 
   font-size: 14px;
@@ -350,6 +352,7 @@ a {
 .user-block {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
   width: 300px;
 }
 
@@ -695,7 +698,7 @@ a {
   display: inline-block;
   width: 10px;
   height: 10px;
-  margin: 5px;
+  margin: 3px;
 
   vertical-align: middle;
   text-align: center;
@@ -828,11 +831,12 @@ main h2 {
 }
 
 .popular-goods {
-  margin-bottom: 21px;
+  margin-bottom: 1px;
 }
 
 .popular-goods-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -841,6 +845,7 @@ main h2 {
 
 .popular-goods-list li {
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .popular-goods-list li:nth-child(4n) {
@@ -907,8 +912,8 @@ main h2 {
   margin: 0;
   margin-top: 9px;
   padding: 0;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 25px;
+  padding-left: 25px;
 
   font-weight: bold;
   font-size: 18px;
@@ -1984,11 +1989,11 @@ main h2 {
 .contacts-and-nav {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 49px;
 }
 
 .footer-contacts {
   width: 335px;
-  margin-bottom: 49px;
 }
 
 .footer-contacts b {
@@ -2015,13 +2020,14 @@ main h2 {
 }
 
 .footer-navigation {
-  width: 550px;
+  width: 560px;
 }
 
 .footer-site-navigation ul,
 .footer-products-navigation ul {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -2030,12 +2036,12 @@ main h2 {
 
 .footer-site-navigation li,
 .footer-products-navigation li {
-  margin-right: 60px;
+  margin-left: 59px;
 }
 
-.footer-site-navigation li:last-child,
-.footer-products-navigation li:last-child {
-  margin-right: 0;
+.footer-site-navigation li:nth-child(1),
+.footer-products-navigation li:nth-child(1) {
+  margin-left: 0;
 }
 
 .footer-site-navigation li {
