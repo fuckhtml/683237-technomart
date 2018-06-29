@@ -336,10 +336,10 @@
           <p>
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
-          <a class="modal-map" href="#">
+          <a class="button modal-map-button" href="#">
             <img src="img/map.jpg" alt="Карта проезда к магазину Техномарт Большая Конюшенная ул., 19" width="300" height="158">
           </a>
-          <a class="button" href="#">Заблудились? Напишите нам!</a>
+          <a class="button write-us-link" href="#">Заблудились? Напишите нам!</a>
         </div>
       </section>
     </main>
@@ -428,11 +428,11 @@
         <div class="fields-wrapper">
           <div class="form-fields">
             <label for="name">Ваше имя:</label>
-            <input type="text" name="name" id="name" placeholder="Имя Фамилия" autocomplete="on" required>
+            <input class="write-us-name" type="text" name="name" id="name" placeholder="Имя Фамилия" autocomplete="on" required>
           </div>
           <div class="form-fields">
             <label for="email">Ваш e-mail:</label>
-            <input type="email" name="email" id="email" placeholder="email@example.com" autocomplete="on" required>
+            <input class="write-us-email" type="email" name="email" id="email" placeholder="email@example.com" autocomplete="on" required>
           </div>
           <div class="form-fields">
             <label for="textarea">Текст письма:</label>
@@ -447,7 +447,9 @@
     </section>
 
     <section class="modal modal-large-map">
-      <img src="img/map-large.jpg" alt="Карта проезда к магазину Техномарт Большая Конюшенная ул., 19" width="940" height="446">
+      <h2 class="visually-hidden">Как до нас добраться?</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.552973654764!2d30.31770232784083!3d59.93955959433328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1530308028414" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div><img src="img/map-large.jpg" alt="Карта проезда к магазину Техномарт Большая Конюшенная ул., 19" width="940" height="446"></div>
       <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
@@ -459,5 +461,8 @@
       </div>
       <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
     </section>
+
+
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
