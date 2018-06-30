@@ -66,28 +66,30 @@ a {
 }
 
 .logo {
+  display: block;
   width: 220px;
   padding-top: 10px;
   padding-bottom: 5px;
 
   text-align: center;
+  color: #ffffff;
 
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;
   cursor: pointer;
-  color: #ffffff;
-  display: block;
 }
 
 .logo:hover {
   background-color: #ca2c37;
   box-shadow: 0 5px 0 0 #b52933;
+
   transition: 0.15s;
 }
 
 .logo:active {
   background-color: #ba2732;
   box-shadow: 0 5px 0 0 #8e1e26;
+
   transition: 0.15s;
 }
 
@@ -110,25 +112,29 @@ a {
 
 .search-field {
   position: relative;
-  background-color: #293449;
+
   display: block;
+
+  background-color: #293449;
 }
 
 .search-field:hover {
   background-color: #212a3a;
+
   transition: 0.15s;
 }
 
 .search-field:focus {
-  background-color: #ffffff;
   color: #000000;
+
+  background-color: #ffffff;
 }
 
 .search-field::before {
   content: "\0041";
   position: absolute;
-  left: 17px;
   top: 11px;
+  left: 17px;
 
   font-family: "technomart-icons";
 
@@ -137,11 +143,13 @@ a {
 
 .search-field:hover::before {
   opacity: 1;
+
   transition: 0.15s;
 }
 
 .search-field:focus::before {
   color: #ee3643;
+
   opacity: 1;
 }
 
@@ -149,9 +157,9 @@ a {
   box-sizing: border-box;
   width: 270px;
   padding-top: 11px;
+  padding-right: 10px;
   padding-bottom: 12px;
   padding-left: 48px;
-  padding-right: 10px;
 
   background-color: transparent;
   border: none;
@@ -168,10 +176,10 @@ a {
   width: 150px;
   padding-top: 12px;
   padding-bottom: 11px;
+
   color: #ffffff;
 
   background-color: #293449;
-
 }
 
 .bookmarks {
@@ -219,18 +227,21 @@ a {
 .bookmarks:hover::before,
 .cart:hover::before {
   opacity: 1;
+
   transition: 0.15s;
 }
 
 .bookmarks:active::before,
 .cart:active::before {
   opacity: 0.5;
+
   transition: 0.15s;
 }
 
 .bookmarks:hover,
 .cart:hover {
   background-color: #212a3a;
+
   transition: 0.15s;
 }
 
@@ -239,6 +250,7 @@ a {
   color: rgba(255, 255, 255, 0.5);
 
   background-color: #161d29;
+
   transition: 0.15s;
 }
 
@@ -250,13 +262,16 @@ a {
 
 .order-complete:hover {
   background-color: #5fbb2d;
+
   transition: 0.15s;
 }
 
 .order-complete:active {
   color: rgba(255, 255, 255, 0.5);
-  transition: 0.15s;
+
   background-color: #518534;
+
+  transition: 0.15s;
 }
 
 .header-middle {
@@ -346,7 +361,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  width: 300px;
+  width: 299px;
 }
 
 .user-block a {
@@ -389,11 +404,13 @@ a {
 
 .login:hover::before {
   opacity: 1;
+
   transition: 0.15s;
 }
 
 .login:active::before {
   opacity: 0.3;
+
   transition: 0.15s;
 }
 
@@ -406,13 +423,15 @@ a {
 .registration:hover,
 .user-block-menu a:hover {
   color: #ee3643;
+
   transition: 0.15s;
 }
 
 .login:active,
 .registration:active,
-.user-block-profile:active {
+.profile-link:active {
   color: rgba(0, 0, 0, 0.3);
+
   transition: 0.15s;
 }
 
@@ -436,6 +455,7 @@ a {
 
 .user-block-menu a:active {
   color: rgba(50, 66, 92, 0.3);
+
   transition: 0.15s;
 }
 
@@ -482,13 +502,16 @@ a {
 
 .main-navigation a:hover {
   background-color: #293449;
+
   transition: 0.15s;
 }
 
 .main-navigation a:active {
   color: rgba(255, 255, 255, 0.5);
-  transition: 0.15s;
+
   background-color: #1d2739;
+
+  transition: 0.15s;
 }
 
 .promo {
@@ -580,11 +603,13 @@ a {
 
 .button:hover {
   background-color: #ca2c37;
+
   transition: background-color 0.15s;
 }
 
 .button:active {
   background-color: #ba2732;
+
   transition: background-color 0.15s;
 }
 
@@ -597,11 +622,13 @@ a {
 
 .promo-button:hover {
   background-color: rgba(0, 0, 0, 0.2);
+
   transition: background-color 0.15s;
 }
 
 .promo-button:active {
   background-color: rgba(0, 0, 0, 0.3);
+
   transition: background-color 0.15s;
 }
 
@@ -646,6 +673,7 @@ a {
   position: relative;
 
   width: 620px;
+
   color: #ffffff;
 
   background-color: #594945;
@@ -1035,11 +1063,13 @@ main h2 {
 
 .buy-button:hover::before {
   opacity: 1;
+
   transition: 0.15s;
 }
 
 .buy-button:active::before {
   opacity: 1;
+
   transition: 0.15s;
 }
 
@@ -1053,25 +1083,30 @@ main h2 {
   background-color: #5fbb2d;
   border: solid 3px #5fbb2d;
   border-bottom-color: #367315;
+
   transition: 0.15s;
 }
 
 .buy-button:active {
   background-color: #518534;
   border: solid 3px #518534;
+
   transition: 0.15s;
 }
 
 .to-bookmarks-button:hover {
-  border: solid 3px #32425c;
   background-color: inherit;
+  border: solid 3px #32425c;
+
   transition: 0.15s;
 }
 
 .to-bookmarks-button:active {
   color: rgba(50, 66, 92, 0.3);
-  transition: 0.15s;
+
   border: solid 3px rgba(50, 66, 92, 0.3);
+
+  transition: 0.15s;
 }
 
 .popular-producers {
@@ -1104,6 +1139,7 @@ main h2 {
 
 .popular-producers-list li:active {
   box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+
   transition: box-shadow 0.5s;
 }
 
@@ -1119,6 +1155,7 @@ main h2 {
 
 .popular-producers-list a:active {
   opacity: 0.3;
+
   transition: 0.15s;
 }
 
@@ -1351,17 +1388,37 @@ main h2 {
   flex-direction: column;
 }
 
-.user-block-profile {
+.user-links {
+  position: relative;
+}
+
+.user-links:hover .profile-link::before,
+.user-links:hover .logout-link {
+  opacity: 1;
+
+  transition: 0.15s;
+}
+
+.user-links:active .profile-link::before,
+.user-links:active .logout-link {
+  opacity: 0.3;
+
+  transition: 0.15s;
+}
+
+.profile-link {
   position: relative;
 
+  display: block;
   box-sizing: border-box;
   width: 299px;
   padding-top: 12px;
+  padding-right: 40px;
   padding-bottom: 12px;
   padding-left: 47px;
 }
 
-.user-block-profile::before {
+.profile-link::before {
   content: "";
   position: absolute;
   top: 13px;
@@ -1376,39 +1433,18 @@ main h2 {
   opacity: 0.3;
 }
 
-.user-block-profile:hover::before {
-  opacity: 1;
-  transition: 0.15s;
-}
-
-.user-block-profile:active::before {
-  opacity: 0.3;
-  transition: 0.15s;
-}
-
-.user-block-profile::after {
-  content: "";
+.logout-link {
   position: absolute;
   top: 14px;
-  right: 9px;
+  right: 10px;
 
-  width: 20px;
+  width: 21px;
   height: 17px;
 
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.3;
-}
-
-.user-block-profile:hover::after {
-  opacity: 1;
-  transition: 0.15s;
-}
-
-.user-block-profile:active::after {
-  opacity: 0.3;
-  transition: 0.15s;
 }
 
 .user-block-menu {
@@ -1820,16 +1856,17 @@ main h2 {
 
 .catalog-sorting-form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 20px;
 
   background-color: #f7f3ec;
 }
 
-.sorting {
+.sort-by-category {
   display: flex;
   justify-content: flex-start;
-  width: 460px;
+  width: 380px;
 
   line-height: 18px;
   text-transform: uppercase;
@@ -1837,7 +1874,8 @@ main h2 {
   background-color: #f7f3ec;
 }
 
-.sorting,
+.sort-by-category,
+.sort-by-increase-decrease,
 .catalog-list,
 .catalog-pagination-list {
   margin: 0;
@@ -1846,21 +1884,21 @@ main h2 {
   list-style: none;
 }
 
-.sorting-item {
+.sort-by-category .sorting-item {
   margin-right: auto;
   margin-left: 0;
   padding: 10px 0;
 }
 
-.sorting-item:nth-child(1) {
+.sort-by-category .sorting-item:nth-child(1) {
   margin-right: 71px;
 }
 
-.sorting-item:last-child {
-  margin-right: 106px;
+.sort-by-category .sorting-item:last-child {
+  margin-right: 25px;;
 }
 
-.catalog-sorting-form a {
+.sort-by-category a {
   color: rgba(0, 0, 0, 0.3);
   text-decoration: underline;
 
@@ -1870,22 +1908,51 @@ main h2 {
   text-decoration-style: dotted;
 }
 
-.catalog-sorting-form a:hover {
+.sort-by-category a:hover {
   color: #000000;
   text-decoration: underline;
 
   background-color: #f7f3ec;
 
+  transition: 0.15s;
+
   text-decoration-color: #ee3643;
   text-decoration-style: solid;
-  transition: 0.15s;
 }
 
-.sorting-item.active a {
+.sort-by-category .active a {
   color: #ee3643;
   text-decoration: none;
 
   background-color: #f7f3ec;
+}
+
+.sort-by-increase-decrease {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 60px;
+  padding-right: 17px;
+  padding-left: 0;
+}
+
+.sort-by-increase-decrease a {
+  display: block;
+  width: 11px;
+  height: 10px;
+}
+
+.sort-by-increase-decrease li:nth-child(1) a {
+  background-image: url("../img/icon-up-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sort-by-increase-decrease li:nth-child(2) a {
+  background-image: url("../img/icon-down-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .catalog-list {
@@ -1945,11 +2012,13 @@ main h2 {
 
 .catalog-pagination-list a:hover {
   border: solid 1px #bdc6ca;
+
   transition: 0.15s;
 }
 
 .catalog-pagination-list a:active {
   border-color: #ee3643;
+
   transition: 0.15s;
 }
 
@@ -2078,13 +2147,15 @@ main h2 {
 .footer-products-navigation a:hover {
   text-decoration: underline;
 
-  text-decoration-color: inherit;
   transition: 0.15s;
+
+  text-decoration-color: inherit;
 }
 
 .footer-site-navigation a:active,
 .footer-products-navigation a:active {
   opacity: 0.5;
+
   transition: 0.15s;
 }
 
@@ -2116,15 +2187,19 @@ main h2 {
 .socials-and-feedback span:hover,
 .socials-and-feedback .html-academy:hover {
   text-decoration: underline;
+
   transition: 0.15s;
+
   text-decoration-color: inherit;
 }
 
 .socials-and-feedback span:active,
 .socials-and-feedback .html-academy:active {
   color: #ee3643;
-  transition: 0.15s;
+
   background-color: #293449;
+
+  transition: 0.15s;
 }
 
 
@@ -2157,11 +2232,13 @@ main h2 {
 
 .social-button:hover {
   background-color: rgb(238, 54, 67);
+
   transition: 0.15s;
 }
 
 .social-button:active {
   background-color: rgb(238, 54, 67);
+
   transition: 0.15s;
 }
 
@@ -2338,12 +2415,14 @@ main h2 {
 .write-us-form input:hover,
 .write-us-form textarea:hover {
   border: solid 2px #b5b5b5;
+
   transition: 0.15s;
 }
 
 .write-us-form input:focus,
 .write-us-form textarea:focus {
   border: solid 2px #ee3643;
+
   transition: 0.15s;
 }
 
