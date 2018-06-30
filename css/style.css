@@ -1943,16 +1943,24 @@ main h2 {
   height: 10px;
 }
 
-.sort-by-increase-decrease li:nth-child(1) a {
+.increase-link {
   background-image: url("../img/icon-up-triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.sort-by-increase-decrease li:nth-child(2) a {
+.active .increase-link {
+  background-image: url("../img/icon-up-triangle-active.svg");
+}
+
+.decrease-link {
   background-image: url("../img/icon-down-triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.active .decrease-link {
+  background-image: url("../img/icon-down-triangle-active.svg");
 }
 
 .catalog-list {
