@@ -63,13 +63,9 @@ a {
 
 .header-top a {
   display: block;
-
-  color: #ffffff;
-
-  background-color: #293449;
 }
 
-.header-top .logo {
+.logo {
   width: 220px;
   padding-top: 10px;
   padding-bottom: 5px;
@@ -78,25 +74,28 @@ a {
 
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;
+  cursor: pointer;
+  color: #ffffff;
+  display: block;
 }
 
-.header-top .logo:hover {
+.logo:hover {
   background-color: #ca2c37;
   box-shadow: 0 5px 0 0 #b52933;
+  transition: 0.15s;
 }
 
-.header-top .logo:active {
+.logo:active {
   background-color: #ba2732;
   box-shadow: 0 5px 0 0 #8e1e26;
+  transition: 0.15s;
 }
 
-.logo b {
+.logo-text {
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
-
-  cursor: pointer;
 }
 
 .order-block {
@@ -109,8 +108,6 @@ a {
   line-height: 18px;
 }
 
-/* переделка поля поискв */
-
 .search-field {
   position: relative;
   background-color: #293449;
@@ -119,6 +116,7 @@ a {
 
 .search-field:hover {
   background-color: #212a3a;
+  transition: 0.15s;
 }
 
 .search-field:focus {
@@ -139,6 +137,7 @@ a {
 
 .search-field:hover::before {
   opacity: 1;
+  transition: 0.15s;
 }
 
 .search-field:focus::before {
@@ -169,6 +168,10 @@ a {
   width: 150px;
   padding-top: 12px;
   padding-bottom: 11px;
+  color: #ffffff;
+
+  background-color: #293449;
+
 }
 
 .bookmarks {
@@ -216,16 +219,19 @@ a {
 .bookmarks:hover::before,
 .cart:hover::before {
   opacity: 1;
+  transition: 0.15s;
 }
 
 .bookmarks:active::before,
 .cart:active::before {
   opacity: 0.5;
+  transition: 0.15s;
 }
 
 .bookmarks:hover,
 .cart:hover {
   background-color: #212a3a;
+  transition: 0.15s;
 }
 
 .bookmarks:active,
@@ -233,6 +239,7 @@ a {
   color: rgba(255, 255, 255, 0.5);
 
   background-color: #161d29;
+  transition: 0.15s;
 }
 
 .order-block .order-complete {
@@ -243,11 +250,12 @@ a {
 
 .order-complete:hover {
   background-color: #5fbb2d;
+  transition: 0.15s;
 }
 
 .order-complete:active {
   color: rgba(255, 255, 255, 0.5);
-
+  transition: 0.15s;
   background-color: #518534;
 }
 
@@ -381,10 +389,12 @@ a {
 
 .login:hover::before {
   opacity: 1;
+  transition: 0.15s;
 }
 
 .login:active::before {
   opacity: 0.3;
+  transition: 0.15s;
 }
 
 .registration {
@@ -396,12 +406,14 @@ a {
 .registration:hover,
 .user-block-menu a:hover {
   color: #ee3643;
+  transition: 0.15s;
 }
 
 .login:active,
 .registration:active,
 .user-block-profile:active {
   color: rgba(0, 0, 0, 0.3);
+  transition: 0.15s;
 }
 
 .user-block-menu {
@@ -424,6 +436,7 @@ a {
 
 .user-block-menu a:active {
   color: rgba(50, 66, 92, 0.3);
+  transition: 0.15s;
 }
 
 .main-navigation {
@@ -469,11 +482,12 @@ a {
 
 .main-navigation a:hover {
   background-color: #293449;
+  transition: 0.15s;
 }
 
 .main-navigation a:active {
   color: rgba(255, 255, 255, 0.5);
-
+  transition: 0.15s;
   background-color: #1d2739;
 }
 
@@ -564,6 +578,16 @@ a {
   border-radius: 2px;
 }
 
+.button:hover {
+  background-color: #ca2c37;
+  transition: background-color 0.15s;
+}
+
+.button:active {
+  background-color: #ba2732;
+  transition: background-color 0.15s;
+}
+
 .promo-button {
   width: 135px;
   margin-left: 2px;
@@ -573,10 +597,12 @@ a {
 
 .promo-button:hover {
   background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 0.15s;
 }
 
 .promo-button:active {
   background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.15s;
 }
 
 .promo-1 {
@@ -620,8 +646,6 @@ a {
   position: relative;
 
   width: 620px;
-  /* height: 266px; */
-
   color: #ffffff;
 
   background-color: #594945;
@@ -771,14 +795,6 @@ a {
 
 .slider-item .button {
   margin-top: 121px;
-}
-
-.slider-button:hover {
-  background-color: #ca2c37;
-}
-
-.slider-button:active {
-  background-color: #ba2732;
 }
 
 main h2 {
@@ -1019,10 +1035,12 @@ main h2 {
 
 .buy-button:hover::before {
   opacity: 1;
+  transition: 0.15s;
 }
 
 .buy-button:active::before {
   opacity: 1;
+  transition: 0.15s;
 }
 
 .to-bookmarks-button {
@@ -1035,20 +1053,24 @@ main h2 {
   background-color: #5fbb2d;
   border: solid 3px #5fbb2d;
   border-bottom-color: #367315;
+  transition: 0.15s;
 }
 
 .buy-button:active {
   background-color: #518534;
   border: solid 3px #518534;
+  transition: 0.15s;
 }
 
 .to-bookmarks-button:hover {
   border: solid 3px #32425c;
+  background-color: inherit;
+  transition: 0.15s;
 }
 
 .to-bookmarks-button:active {
   color: rgba(50, 66, 92, 0.3);
-
+  transition: 0.15s;
   border: solid 3px rgba(50, 66, 92, 0.3);
 }
 
@@ -1082,6 +1104,7 @@ main h2 {
 
 .popular-producers-list li:active {
   box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+  transition: box-shadow 0.5s;
 }
 
 .popular-producers-list a {
@@ -1096,6 +1119,7 @@ main h2 {
 
 .popular-producers-list a:active {
   opacity: 0.3;
+  transition: 0.15s;
 }
 
 .services {
@@ -1293,7 +1317,7 @@ main h2 {
   padding-right: 120px;
 }
 
-.about-company-right .modal-map-button {
+.modal-map-button {
   display: block;
   margin: 0;
   margin-top: 31px;
@@ -1308,7 +1332,7 @@ main h2 {
   height: 158px;
 }
 
-.about-company-right .button {
+.write-us-link {
   width: 100%;
   margin-top: 40px;
 }
@@ -1354,10 +1378,12 @@ main h2 {
 
 .user-block-profile:hover::before {
   opacity: 1;
+  transition: 0.15s;
 }
 
 .user-block-profile:active::before {
   opacity: 0.3;
+  transition: 0.15s;
 }
 
 .user-block-profile::after {
@@ -1377,10 +1403,12 @@ main h2 {
 
 .user-block-profile:hover::after {
   opacity: 1;
+  transition: 0.15s;
 }
 
 .user-block-profile:active::after {
   opacity: 0.3;
+  transition: 0.15s;
 }
 
 .user-block-menu {
@@ -1850,9 +1878,10 @@ main h2 {
 
   text-decoration-color: #ee3643;
   text-decoration-style: solid;
+  transition: 0.15s;
 }
 
-.catalog-sorting-form .active {
+.sorting-item.active a {
   color: #ee3643;
   text-decoration: none;
 
@@ -1916,10 +1945,12 @@ main h2 {
 
 .catalog-pagination-list a:hover {
   border: solid 1px #bdc6ca;
+  transition: 0.15s;
 }
 
 .catalog-pagination-list a:active {
   border-color: #ee3643;
+  transition: 0.15s;
 }
 
 .catalog-pagination-list .current-page {
@@ -1981,20 +2012,14 @@ main h2 {
   width: 335px;
 }
 
-.footer-contacts b {
-  display: block;
-  width: 220px;
+.main-footer .logo {
   padding-top: 18px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
+}
 
-  font-weight: 400;
+.main-footer .logo-text {
   font-size: 30px;
   line-height: 30px;
-  text-align: center;
-  text-transform: uppercase;
-
-  background-color: #ee3643;
-  box-shadow: 0 5px 0 0 #b52933;
 }
 
 .footer-contacts address {
@@ -2054,11 +2079,13 @@ main h2 {
   text-decoration: underline;
 
   text-decoration-color: inherit;
+  transition: 0.15s;
 }
 
 .footer-site-navigation a:active,
 .footer-products-navigation a:active {
   opacity: 0.5;
+  transition: 0.15s;
 }
 
 .socials-and-feedback-wrapper {
@@ -2089,14 +2116,14 @@ main h2 {
 .socials-and-feedback span:hover,
 .socials-and-feedback .html-academy:hover {
   text-decoration: underline;
-
+  transition: 0.15s;
   text-decoration-color: inherit;
 }
 
 .socials-and-feedback span:active,
 .socials-and-feedback .html-academy:active {
   color: #ee3643;
-
+  transition: 0.15s;
   background-color: #293449;
 }
 
@@ -2130,10 +2157,12 @@ main h2 {
 
 .social-button:hover {
   background-color: rgb(238, 54, 67);
+  transition: 0.15s;
 }
 
 .social-button:active {
   background-color: rgb(238, 54, 67);
+  transition: 0.15s;
 }
 
 .social-button-vk {
@@ -2309,11 +2338,13 @@ main h2 {
 .write-us-form input:hover,
 .write-us-form textarea:hover {
   border: solid 2px #b5b5b5;
+  transition: 0.15s;
 }
 
 .write-us-form input:focus,
 .write-us-form textarea:focus {
   border: solid 2px #ee3643;
+  transition: 0.15s;
 }
 
 .write-us-form input[type="text"],
