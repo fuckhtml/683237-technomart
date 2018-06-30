@@ -113,13 +113,24 @@ a {
 
 .search-field {
   position: relative;
+  background-color: #293449;
+  display: block;
+}
+
+.search-field:hover {
+  background-color: #212a3a;
+}
+
+.search-field:focus {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .search-field::before {
   content: "\0041";
   position: absolute;
-  top: 0;
   left: 17px;
+  top: 11px;
 
   font-family: "technomart-icons";
 
@@ -131,8 +142,7 @@ a {
 }
 
 .search-field:focus::before {
-  color: red;
-
+  color: #ee3643;
   opacity: 1;
 }
 
@@ -142,8 +152,9 @@ a {
   padding-top: 11px;
   padding-bottom: 12px;
   padding-left: 48px;
+  padding-right: 10px;
 
-  background-color: #293449;
+  background-color: transparent;
   border: none;
 }
 
@@ -151,35 +162,8 @@ a {
   color: #ffffff;
 }
 
-.search-form input[type="search"]:hover {
-  background-color: #212a3a;
-}
-
-.search-form input[type="search"]:focus {
-  color: #000000;
-
-  background-color: #ffffff;
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 17px 12px;
-}
-
-.search-form input[type="search"]:focus ~ .search-field::before {
-  display: none;
-}
-
-.search-form input[type="search"]:focus:hover {
-  opacity: 1;
-}
-
-.search-form input[type="search"]:focus::placeholder {
-  color: #000000;
-
-  background-color: #ffffff;
-}
-
 .bookmarks,
-.basket,
+.cart,
 .order-complete {
   box-sizing: border-box;
   width: 150px;
@@ -208,13 +192,13 @@ a {
   opacity: 0.3;
 }
 
-.basket {
+.cart {
   position: relative;
 
   padding-left: 49px;
 }
 
-.basket::before {
+.cart::before {
   content: "";
   position: absolute;
   top: 12px;
@@ -230,22 +214,22 @@ a {
 }
 
 .bookmarks:hover::before,
-.basket:hover::before {
+.cart:hover::before {
   opacity: 1;
 }
 
 .bookmarks:active::before,
-.basket:active::before {
+.cart:active::before {
   opacity: 0.5;
 }
 
 .bookmarks:hover,
-.basket:hover {
+.cart:hover {
   background-color: #212a3a;
 }
 
 .bookmarks:active,
-.basket:active {
+.cart:active {
   color: rgba(255, 255, 255, 0.5);
 
   background-color: #161d29;
@@ -1331,7 +1315,7 @@ main h2 {
 
 /* Стили inner-page */
 
-.inner-page .basket {
+.header-top .cart-not-empty {
   background-color: #ee3643;
 }
 
@@ -2408,7 +2392,7 @@ main h2 {
   transition: box-shadow 0.5s;
 }
 
-.modal-product-in-basket {
+.modal-product-in-cart {
   top: 411px;
   left: 50%;
 
@@ -2422,7 +2406,7 @@ main h2 {
   transition: box-shadow 0.5s;
 }
 
-.modal-product-in-basket p {
+.modal-product-in-cart p {
   position: relative;
 
   margin: 0;
@@ -2438,7 +2422,7 @@ main h2 {
   font-family: "Cuprum", "Arial", sans-serif;
 }
 
-.modal-product-in-basket p::before {
+.modal-product-in-cart p::before {
   content: "";
   position: absolute;
   top: -17px;

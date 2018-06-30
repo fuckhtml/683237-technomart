@@ -84,25 +84,25 @@ window.addEventListener("keydown", function (evt) {
 
 
 
-var basket_link = document.querySelector(".buy-button");
-var basket_popup= document.querySelector(".modal-product-in-basket");
-var basket_close = basket_popup.querySelector(".modal-close");
+var cart_link = document.querySelector(".buy-button");
+var cart_popup= document.querySelector(".modal-product-in-cart");
+var cart_close = cart_popup.querySelector(".modal-close");
 
-basket_link.addEventListener("click", function (evt) {
+cart_link.addEventListener("click", function (evt) {
   evt.preventDefault();
-  basket_popup.classList.add("modal-show");
+  cart_popup.classList.add("modal-show");
 });
 
-basket_close.addEventListener("click", function (evt) {
+cart_close.addEventListener("click", function (evt) {
   evt.preventDefault();
-  basket_popup.classList.remove("modal-show");
+  cart_popup.classList.remove("modal-show");
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (basket_popup.classList.contains("modal-show")) {
+    if (cart_popup.classList.contains("modal-show")) {
       evt.preventDefault();
-      basket_popup.classList.remove("modal-show");
+      cart_popup.classList.remove("modal-show");
     }
   }
 });
