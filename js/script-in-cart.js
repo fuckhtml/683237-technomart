@@ -1,11 +1,13 @@
-var cart_link = document.querySelector(".buy-button");
-var cart_popup= document.querySelector(".modal-product-in-cart");
+var products = document.querySelectorAll(".buy-button");
+var cart_popup = document.querySelector(".modal-product-in-cart");
 var cart_close = cart_popup.querySelector(".modal-close");
 
-cart_link.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  cart_popup.classList.add("modal-show");
-});
+for (var i = 0; i < products.length; i++) {
+  products[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cart_popup.classList.add("modal-show");
+  });
+}
 
 cart_close.addEventListener("click", function (evt) {
   evt.preventDefault();
