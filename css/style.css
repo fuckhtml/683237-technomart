@@ -665,6 +665,19 @@ a {
 #slider-control-1:checked ~ .slider-list .slider-item:nth-child(1),
 #slider-control-2:checked ~ .slider-list .slider-item:nth-child(2) {
   display: block;
+  animation-name: motion_positining;
+  animation-duration: 1s;
+}
+
+@keyframes motion_positining {
+  from {
+    transform: scale(1.1);
+    opacity: .9;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .slider-item:nth-child(1) {
@@ -1144,6 +1157,7 @@ main h2 {
   margin-bottom: 79px;
 
   background-color: #f4f8fa;
+  overflow: hidden;
 }
 
 .services-description {
@@ -1250,7 +1264,10 @@ main h2 {
 #service-2:checked ~ .slide-list .slide-item:nth-child(2),
 #service-3:checked ~ .slide-list .slide-item:nth-child(3) {
   display: block;
+  animation-name: motion_swipe;
+  animation-duration: .5s;
 }
+
 #service-1:checked ~ .toggle-list .toggle-item:nth-child(1),
 #service-2:checked ~ .toggle-list .toggle-item:nth-child(2),
 #service-3:checked ~ .toggle-list .toggle-item:nth-child(3) {
@@ -1259,6 +1276,17 @@ main h2 {
   background-color: #ffffff;
   box-shadow: none;
   box-shadow: 0 1px 0 0 rgb(255, 255, 255);
+}
+
+@keyframes motion_swipe {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 .about-company {
@@ -1349,8 +1377,6 @@ main h2 {
   margin-top: 40px;
 }
 
-/* Стили inner-page */
-
 .header-top .cart-not-empty {
   background-color: #ee3643;
 }
@@ -1377,20 +1403,6 @@ main h2 {
 .user-links {
   position: relative;
 }
-
-/* .user-links:hover .profile-link::before,
-.user-links:hover .logout-link {
-  opacity: 1;
-
-  transition: 0.15s;
-}
-
-.user-links:active .profile-link::before,
-.user-links:active .logout-link {
-  opacity: 0.3;
-
-  transition: 0.15s;
-} */
 
 .profile-link:hover::before,
 .logout-link:hover,
@@ -2195,8 +2207,6 @@ main h2 {
   margin: 0;
   padding: 0;
 }
-
-/* Футер главной */
 
 .main-footer {
   font-size: 18px;
