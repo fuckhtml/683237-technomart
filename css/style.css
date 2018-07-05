@@ -2484,9 +2484,6 @@ main h2 {
   padding: 0;
 }
 
-
-/* попапы */
-
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
@@ -2767,7 +2764,7 @@ main h2 {
 .continue-shopping-button {
   color: #000000;
 
-  transition: 0.15s
+  transition: 0.15s;
   background-color: #ffffff;
 }
 
