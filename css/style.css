@@ -2112,14 +2112,14 @@ main h2 {
 
 .active .increase-link {
   background-image: url("../img/icon-up-triangle-active.svg");
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .decrease-link {
   background-image: url("../img/icon-down-triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .active .decrease-link {
