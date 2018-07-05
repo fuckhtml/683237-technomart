@@ -665,6 +665,7 @@ a {
 #slider-control-1:checked ~ .slider-list .slider-item:nth-child(1),
 #slider-control-2:checked ~ .slider-list .slider-item:nth-child(2) {
   display: block;
+
   animation-name: motion_positining;
   animation-duration: 1s;
 }
@@ -672,7 +673,7 @@ a {
 @keyframes motion_positining {
   from {
     transform: scale(1.1);
-    opacity: .9;
+    opacity: 0.9;
   }
   to {
     transform: scale(1);
@@ -1155,9 +1156,9 @@ main h2 {
 
 .services-wrapper {
   margin-bottom: 79px;
+  overflow: hidden;
 
   background-color: #f4f8fa;
-  overflow: hidden;
 }
 
 .services-description {
@@ -1264,8 +1265,9 @@ main h2 {
 #service-2:checked ~ .slide-list .slide-item:nth-child(2),
 #service-3:checked ~ .slide-list .slide-item:nth-child(3) {
   display: block;
+
   animation-name: motion_swipe;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
 }
 
 #service-1:checked ~ .toggle-list .toggle-item:nth-child(1),
@@ -1384,11 +1386,13 @@ main h2 {
 .header-top .cart-not-empty:hover,
 .header-top .cart-not-empty:focus {
   background-color: #ca2c37;
+
   transition: 0.15s;
 }
 
 .header-top .cart-not-empty:active {
   background-color: #ba2732;
+
   transition: 0.15s;
 }
 
