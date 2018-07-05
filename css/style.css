@@ -1355,6 +1355,17 @@ main h2 {
   background-color: #ee3643;
 }
 
+.header-top .cart-not-empty:hover,
+.header-top .cart-not-empty:focus {
+  background-color: #ca2c37;
+  transition: 0.15s;
+}
+
+.header-top .cart-not-empty:active {
+  background-color: #ba2732;
+  transition: 0.15s;
+}
+
 .inner-page .header-middle {
   padding-bottom: 38px;
 }
