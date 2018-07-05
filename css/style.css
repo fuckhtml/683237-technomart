@@ -2314,7 +2314,8 @@ main h2 {
 }
 
 .socials-and-feedback span:hover::before,
-.socials-and-feedback .html-academy:hover::before {
+.socials-and-feedback .html-academy:hover::before,
+.socials-and-feedback .html-academy:focus::before {
   content: "";
   position: absolute;
   right: 0;
