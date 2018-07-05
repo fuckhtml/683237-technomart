@@ -14,16 +14,16 @@
     <header class="main-header">
       <div class="header-top-wrapper">
         <div class="header-top container">
-          <a class="logo">
+          <a class="logo" tabindex="1">
             <b class="logo-text">Техномарт</b>
           </a>
           <div class="order-block">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <label class="search-field">
+              <label for="search-request">
                 <span class="visually-hidden">Поиск по сайту:</span>
-                <input type="search" name="search-request" id="search-request" placeholder="Поиск:" autocomplete="on">
               </label>
-              <button class="button visually-hidden" type="submit" value="Поиск">Поиск</button>
+              <input class="search-field" type="search" name="search-request" id="search-request" placeholder="Поиск:" autocomplete="on">
+              <button class="button visually-hidden" type="submit" value="Поиск" tabindex="-1">Поиск</button>
             </form>
             <a href="#" class="bookmarks">Закладки: 0</a>
             <a href="#" class="cart">Корзина: 0</a>
