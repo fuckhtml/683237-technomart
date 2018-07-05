@@ -70,21 +70,19 @@ a {
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;
   cursor: pointer;
+
+  transition: 0.15s;
 }
 
 .logo:hover,
 .logo:focus {
   background-color: #ca2c37;
   box-shadow: 0 5px 0 0 #b52933;
-
-  transition: 0.15s;
 }
 
 .logo:active {
   background-color: #ba2732;
   box-shadow: 0 5px 0 0 #8e1e26;
-
-  transition: 0.15s;
 }
 
 .logo-text {
@@ -160,6 +158,8 @@ a {
   position: relative;
 
   padding-left: 44px;
+
+  transition: 0.15s;
 }
 
 .bookmarks::before {
@@ -175,12 +175,16 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
+
+  transition: 0.15s;
 }
 
 .cart {
   position: relative;
 
   padding-left: 49px;
+
+  transition: 0.15s;
 }
 
 .cart::before {
@@ -196,6 +200,8 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
+
+  transition: 0.15s;
 }
 
 .bookmarks:hover::before,
@@ -203,15 +209,11 @@ a {
 .bookmarks:focus::before,
 .cart:focus::before {
   opacity: 1;
-
-  transition: 0.15s;
 }
 
 .bookmarks:active::before,
 .cart:active::before {
   opacity: 0.5;
-
-  transition: 0.15s;
 }
 
 .bookmarks:hover,
@@ -219,8 +221,6 @@ a {
 .bookmarks:focus,
 .cart:focus {
   background-color: #212a3a;
-
-  transition: 0.15s;
 }
 
 .bookmarks:active,
@@ -228,29 +228,25 @@ a {
   color: rgba(255, 255, 255, 0.5);
 
   background-color: #161d29;
-
-  transition: 0.15s;
 }
 
 .order-block .order-complete {
   text-align: center;
 
   background-color: #63a63e;
+
+  transition: 0.15s;
 }
 
 .order-complete:hover,
 .order-complete:focus {
   background-color: #5fbb2d;
-
-  transition: 0.15s;
 }
 
 .order-complete:active {
   color: rgba(255, 255, 255, 0.5);
 
   background-color: #518534;
-
-  transition: 0.15s;
 }
 
 .header-middle {
@@ -364,6 +360,8 @@ a {
 
   padding-right: 26px;
   padding-left: 47px;
+
+  transition: 0.15s;
 }
 
 .login::before {
@@ -379,24 +377,24 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
+
+  transition: 0.15s;
 }
 
 .login:hover::before,
 .login:focus::before {
   opacity: 1;
-
-  transition: 0.15s;
 }
 
 .login:active::before {
   opacity: 0.3;
-
-  transition: 0.15s;
 }
 
 .registration {
   padding-right: 24px;
   padding-left: 24px;
+
+  transition: 0.15s;
 }
 
 .login:hover,
@@ -404,16 +402,12 @@ a {
 .login:focus,
 .registration:focus {
   color: #ee3643;
-
-  transition: 0.15s;
 }
 
 .login:active,
 .registration:active,
 .profile-link:active {
   color: rgba(0, 0, 0, 0.3);
-
-  transition: 0.15s;
 }
 
 .user-block-menu {
@@ -456,6 +450,8 @@ a {
 
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 0 rgb(41, 52, 73);
+
+  transition: 0.15s;
 }
 
 .navigation-item:first-child {
@@ -473,16 +469,12 @@ a {
 .main-navigation a:hover,
 .main-navigation a:focus {
   background-color: #293449;
-
-  transition: 0.15s;
 }
 
 .main-navigation a:active {
   color: rgba(255, 255, 255, 0.5);
 
   background-color: #1d2739;
-
-  transition: 0.15s;
 }
 
 .promo {
@@ -570,19 +562,17 @@ a {
   background-color: #ee3643;
   border: none;
   border-radius: 2px;
+
+  transition: background-color 0.15s;
 }
 
 .button:hover,
 .button:focus {
   background-color: #ca2c37;
-
-  transition: background-color 0.15s;
 }
 
 .button:active {
   background-color: #ba2732;
-
-  transition: background-color 0.15s;
 }
 
 .promo-button {
@@ -590,19 +580,17 @@ a {
   margin-left: 2px;
 
   background-color: rgba(0, 0, 0, 0.1);
+
+  transition: background-color 0.15s;
 }
 
 .promo-button:hover,
 .promo-button:focus {
   background-color: rgba(0, 0, 0, 0.2);
-
-  transition: background-color 0.15s;
 }
 
 .promo-button:active {
   background-color: rgba(0, 0, 0, 0.3);
-
-  transition: background-color 0.15s;
 }
 
 .promo-1 {
@@ -897,6 +885,8 @@ main h2 {
   text-align: center;
 
   border: solid 1px #eaeaea;
+
+  transition: box-shadow 0.5s;
 }
 
 .catalog-item .actions {
@@ -929,8 +919,6 @@ main h2 {
 .catalog-item:hover,
 .catalog-item:focus {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
-
-  transition: box-shadow 0.5s;
 }
 
 .catalog-item.new-item::after {
@@ -1045,6 +1033,8 @@ main h2 {
 
   background-color: #63a63e;
   border-bottom-color: #367315;
+
+  transition: 0.15s;
 }
 
 .buy-button::before {
@@ -1060,25 +1050,25 @@ main h2 {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.3;
+
+  transition: 0.15s;
 }
 
 .buy-button:hover::before,
 .buy-button:focus::before {
   opacity: 1;
-
-  transition: 0.15s;
 }
 
 .buy-button:active::before {
   opacity: 1;
-
-  transition: 0.15s;
 }
 
 .to-bookmarks-button {
   color: #32425c;
 
   background-color: #ffffff;
+
+  transition: 0.15s;
 }
 
 .buy-button:hover,
@@ -1086,31 +1076,23 @@ main h2 {
   background-color: #5fbb2d;
   border: solid 3px #5fbb2d;
   border-bottom-color: #367315;
-
-  transition: 0.15s;
 }
 
 .buy-button:active {
   background-color: #518534;
   border: solid 3px #518534;
-
-  transition: 0.15s;
 }
 
 .to-bookmarks-button:hover,
 .to-bookmarks-button:focus {
   background-color: inherit;
   border: solid 3px #32425c;
-
-  transition: 0.15s;
 }
 
 .to-bookmarks-button:active {
   color: rgba(50, 66, 92, 0.3);
 
   border: solid 3px rgba(50, 66, 92, 0.3);
-
-  transition: 0.15s;
 }
 
 .popular-producers {
@@ -1129,6 +1111,8 @@ main h2 {
 .popular-producers-list li {
   margin-right: 20px;
   margin-bottom: 20px;
+
+  transition: box-shadow 0.5s;
 }
 
 .popular-producers-list li:nth-child(4n) {
@@ -1138,14 +1122,10 @@ main h2 {
 .popular-producers-list li:hover,
 .popular-producers-list li:focus {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
-
-  transition: box-shadow 0.5s;
 }
 
 .popular-producers-list li:active {
   box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
-
-  transition: box-shadow 0.5s;
 }
 
 .popular-producers-list a {
@@ -1153,15 +1133,15 @@ main h2 {
   justify-content: center;
   align-items: center;
   width: 218px;
-  min-height: 143px;
+  height: 143px;
 
   border: solid 1px #eaeaea;
+
+  transition: 0.15s;
 }
 
 .popular-producers-list a:active {
   opacity: 0.3;
-
-  transition: 0.15s;
 }
 
 .services {
@@ -1395,6 +1375,14 @@ main h2 {
   padding: 0;
 
   background-color: #f2f0eb;
+  opacity: 1;
+
+  transition: 0.15s;
+}
+
+.modal-map-button:hover,
+.modal-map-button:focus {
+  opacity: 0.75;
 }
 
 .modal-map-button img {
@@ -1410,19 +1398,17 @@ main h2 {
 
 .header-top .cart-not-empty {
   background-color: #ee3643;
+
+  transition: 0.15s;
 }
 
 .header-top .cart-not-empty:hover,
 .header-top .cart-not-empty:focus {
   background-color: #ca2c37;
-
-  transition: 0.15s;
 }
 
 .header-top .cart-not-empty:active {
   background-color: #ba2732;
-
-  transition: 0.15s;
 }
 
 .inner-page .header-middle {
@@ -1437,22 +1423,6 @@ main h2 {
   position: relative;
 }
 
-.profile-link:hover::before,
-.logout-link:hover,
-.profile-link:focus::before,
-.logout-link:focus {
-  opacity: 1;
-
-  transition: 0.15s;
-}
-
-.profile-link:active::before,
-.logout-link:active {
-  opacity: 0.3;
-
-  transition: 0.15s;
-}
-
 .profile-link {
   position: relative;
 
@@ -1463,6 +1433,8 @@ main h2 {
   padding-right: 40px;
   padding-bottom: 12px;
   padding-left: 47px;
+
+  transition: 0.15s;
 }
 
 .profile-link::before {
@@ -1478,6 +1450,8 @@ main h2 {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.3;
+
+  transition: 0.15s;
 }
 
 .logout-link {
@@ -1492,6 +1466,20 @@ main h2 {
   background-image: url(../img/icon-logout.svg);
   background-repeat: no-repeat;
   background-position: center;
+  opacity: 0.3;
+
+  transition: 0.15s;
+}
+
+.profile-link:hover::before,
+.logout-link:hover,
+.profile-link:focus::before,
+.logout-link:focus {
+  opacity: 1;
+}
+
+.profile-link:active::before,
+.logout-link:active {
   opacity: 0.3;
 }
 
@@ -1522,6 +1510,19 @@ main h2 {
 
 .user-block-menu a {
   position: relative;
+
+  display: block;
+  padding: 0;
+  padding-top: 6px;
+  padding-bottom: 4px;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+
+  background-color: #f2f6f8;
+
+  transition: 0.15s;
 }
 
 .user-block-menu a::after {
@@ -1534,45 +1535,26 @@ main h2 {
   height: 1px;
 
   background-color: #32425c;
+
+  transition: 0.15s;
 }
 
 .user-block-menu a:hover::after,
 .user-block-menu a:focus::after {
   background-color: #ee3643;
-
-  transition: 0.15s;
 }
 
 .user-block-menu a:active::after {
   background-color: rgba(50, 66, 92, 0.3);
-
-  transition: 0.15s;
-}
-
-.user-block-menu a {
-  display: block;
-  padding: 0;
-  padding-top: 6px;
-  padding-bottom: 4px;
-
-  font-size: 16px;
-  line-height: 18px;
-  color: #32425c;
-
-  background-color: #f2f6f8;
 }
 
 .user-block-menu a:hover,
 .user-block-menu a:focus {
   color: #ee3643;
-
-  transition: 0.15s;
 }
 
 .user-block-menu a:active {
   color: rgba(50, 66, 92, 0.3);
-
-  transition: 0.15s;
 }
 
 .breadcrumbs {
@@ -1649,11 +1631,8 @@ main h2 {
   height: 1px;
 
   background-color: #000000;
-}
 
-.breadcrumbs-item:first-child a:hover::before,
-.breadcrumbs-item:first-child a:focus::before {
-  /* bottom: -4px; */
+  transition: 0.15s;
 }
 
 .catalog-columns {
@@ -1858,6 +1837,11 @@ main h2 {
   user-select: none;
 }
 
+.filter input:focus ~ label {
+  outline: none;
+  box-shadow: 0 0 5px #4d90fe;
+}
+
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
@@ -1974,19 +1958,17 @@ main h2 {
   background-color: #ffffff;
   border: solid 1px #e5e5e5;
   cursor: pointer;
+
+  transition: 0.15s;
 }
 
 .filter .button:hover,
 .filter .button:focus {
   border: solid 1px #bdc6ca;
-
-  transition: 0.15s;
 }
 
 .filter .button:active {
   border-color: #ee3643;
-
-  transition: 0.15s;
 }
 
 .catalog-sorting-form {
@@ -2041,6 +2023,8 @@ main h2 {
   color: rgba(0, 0, 0, 0.3);
 
   background-color: #f7f3ec;
+
+  transition: 0.15s;
 }
 
 .sort-by-category a:hover,
@@ -2048,8 +2032,6 @@ main h2 {
   color: #000000;
 
   background-color: #f7f3ec;
-
-  transition: 0.15s;
 }
 
 .sort-by-category a::before {
@@ -2062,13 +2044,13 @@ main h2 {
   height: 0;
 
   border-bottom: 1px dotted #ee3643;
+
+  transition: 0.15s;
 }
 
 .sort-by-category a:hover::before,
 .sort-by-category a:focus::before {
   border-bottom-style: solid;
-
-  transition: 0.15s;
 }
 
 .sort-by-category .active a {
@@ -2189,17 +2171,17 @@ main h2 {
   width: 138px;
 }
 
+.catalog-pagination-list a {
+  transition: 0.15s;
+}
+
 .catalog-pagination-list a:hover,
 .catalog-pagination-list a:focus {
   border: solid 1px #bdc6ca;
-
-  transition: 0.15s;
 }
 
 .catalog-pagination-list a:active {
   border-color: #ee3643;
-
-  transition: 0.15s;
 }
 
 .catalog-pagination-list .current-page {
@@ -2313,6 +2295,13 @@ main h2 {
 .footer-site-navigation a,
 .footer-products-navigation a {
   position: relative;
+
+  transition: 0.15s;
+}
+
+.footer-site-navigation a::before,
+.footer-products-navigation a::before {
+  transition: 0.15s;
 }
 
 .footer-site-navigation a:hover::before,
@@ -2326,8 +2315,6 @@ main h2 {
   left: 0;
 
   height: 1px;
-
-  transition: 0.15s;
 }
 
 .footer-site-navigation a:hover::before,
@@ -2360,8 +2347,6 @@ main h2 {
 .footer-site-navigation a:active,
 .footer-products-navigation a:active {
   opacity: 0.5;
-
-  transition: 0.15s;
 }
 
 .socials-and-feedback-wrapper {
@@ -2389,6 +2374,13 @@ main h2 {
   color: #ffd180;
 
   background-color: #293449;
+
+  transition: 0.15s;
+}
+
+.footer-feedback a::before,
+.footer-developer a::before {
+  transition: 0.15s;
 }
 
 .footer-feedback a:hover::before,
@@ -2404,8 +2396,6 @@ main h2 {
   height: 1px;
 
   background-color: #ffd180;
-
-  transition: 0.15s;
 }
 
 .footer-feedback a:active::before,
@@ -2418,8 +2408,6 @@ main h2 {
   color: #ee3643;
 
   background-color: #293449;
-
-  transition: 0.15s;
 }
 
 .footer-copyright {
@@ -2447,19 +2435,17 @@ main h2 {
 
   background-color: rgb(33, 42, 58);
   border-radius: 50%;
+
+  transition: 0.15s;
 }
 
 .social-button:hover,
 .social-button:focus {
   background-color: rgb(238, 54, 67);
-
-  transition: 0.15s;
 }
 
 .social-button:active {
   background-color: rgb(238, 54, 67);
-
-  transition: 0.15s;
 }
 
 .social-button-vk {
@@ -2630,20 +2616,18 @@ main h2 {
   background-color: #ffffff;
   border: solid 2px #dee3e4;
   border-radius: 2px;
+
+  transition: 0.15s;
 }
 
 .write-us-form input:hover,
 .write-us-form textarea:hover {
   border: solid 2px #b5b5b5;
-
-  transition: 0.15s;
 }
 
 .write-us-form input:focus,
 .write-us-form textarea:focus {
   border: solid 2px #ee3643;
-
-  transition: 0.15s;
 }
 
 .write-us-form input[type="text"],
@@ -2783,5 +2767,19 @@ main h2 {
 .continue-shopping-button {
   color: #000000;
 
+  transition: 0.15s
   background-color: #ffffff;
+}
+
+.continue-shopping-button:hover,
+.continue-shopping-button:focus {
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.continue-shopping-button:active {
+  color: #ffffff;
+
+  background-color: #ba2732;
 }
