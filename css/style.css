@@ -1547,8 +1547,10 @@ main h2 {
 }
 
 .breadcrumbs a {
-  color: #000000;
   position: relative;
+
+  color: #000000;
+
   background-color: #ffffff;
 }
 
@@ -1559,7 +1561,7 @@ main h2 {
 
   background-image: url("../img/breadcrumbs-icon-home.svg");
   background-repeat: no-repeat;
-  background-position: 0px 2px;
+  background-position: 0 2px;
 }
 
 .breadcrumbs-item::after {
@@ -1976,6 +1978,7 @@ main h2 {
 
 .sort-by-category a {
   position: relative;
+
   display: block;
   padding: 10px 0;
 
